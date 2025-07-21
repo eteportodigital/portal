@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horários</title>
+  <link rel="stylesheet" href="../Style/horarios.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!---------------------- NavBar --------------------------------->
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../Assets/Filled.svg" alt="">
+    </div>
+      <ul class="nav-links">
+        <li><a href="#">CURSO</a></li>
+        <li><a href="#">INGRESSO</a></li>
+        <li><a href="#">CAMPUS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!---------------------- SubBar --------------------------------->
+    
+    <nav class="sub-navbar">
+      <div class="sub-navbar-content">
+        <h3 class="sub-navbar-title">Desenvolvimento de Sistemas — Subsequente</h3>
+        <ul class="sub-nav-links">
+          <li><a href="#" class="sub-link active">SOBRE</a></li>
+          <li><a href="#" class="sub-link">EQUIPE</a></li>
+          <li><a href="#" class="sub-link">AVISOS</a></li>
+          <li><a href="#" class="sub-link">DOCUMENTOS</a></li>
+          <li><a href="#" class="sub-link">EDITAIS</a></li>
+          <li><a href="#" class="sub-link">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="siepe">
+        <a href="https://www.siepe.educacao.pe.gov.br" class="sub-link">
+          SIEPE
+          <img src="../Assets/icone_SIEPE.svg" class="siepe-icon" />
+        </a>
+      </div>
+    </nav>
+
+    <!---------------------- HORÁRIOS -------------------------------------->
+
+    <div class="fundo-roxo">
+      <h3>Horários de Aula</h3>
+    </div>
+
+    <section class="horarios-section">
+      <div class="titulo-horarios">
+        <div class="marcador"></div>
+        <h1>Horário das Disciplinas 2025</h1>
+      </div>
+
+      <!-- MÓDULOS -->
+      <div class="modulo" data-modulo="1">
+        <button class="modulo-toggle">
+          <div class="circulo-modulo"><span class="seta">▲</span></div>
+          Módulo 1
+        </button>
+        <div class="grade-horarios" hidden>
+          <!-- Grade com horários e dias -->
+          <div class="grade">
+            <!-- Coluna de horários -->
+            <div class="coluna-horarios">
+              <div>18:30 - 19:00</div>
+              <div>07:00 - 07:30</div>
+              <div>07:30 - 08:00</div>
+              <div>08:00 - 08:30</div>
+              <div>08:30 - 09:00</div>
+            </div>
+
+            <!-- Colunas dos dias -->
+            <div class="coluna-dia">
+              <div class="dia-titulo">Segunda</div>
+              <div class="box" style="top: 0; height: 2rem;">
+                <strong>Programação</strong><br>
+                Prof. João
+              </div>
+            </div>
+            <div class="coluna-dia">
+              <div class="dia-titulo">Terça</div>
+            </div>
+            <div class="coluna-dia">
+              <div class="dia-titulo">Quarta</div>
+              <div class="box" style="top: 4rem; height: 2rem;">
+                <strong>Novas Tecnologias</strong><br>
+                Prof. Maria
+              </div>
+            </div>
+            <div class="coluna-dia">
+              <div class="dia-titulo">Quinta</div>
+            </div>
+            <div class="coluna-dia">
+              <div class="dia-titulo">Sexta</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repita para Módulo 2 e 3 com novas boxes -->
+    </section>
+
+      <!---------------------- Footer ----------------------------->
+
+    <div class="barra"></div>
+
+    <footer class="footer">
+        <div class="footer-contato">
+        <h2 class="duvidas">Dúvidas?</h2>
+        <p class="email-contato">Entre em contato pelo e-mail <br> @etepd.com</p>
+        </div>
+
+        <div class="footer-inferior">
+        <p>eteportodigital@gmail.com |  Avenida Rio Branco, 193 |   3181 - 4869 / 3161 - 4868</p>
+        </div>
+    </footer>
+
+    <script src="../Scripts/horarios.js"></script>
+</body>
+</html>
