@@ -12,24 +12,13 @@ links.forEach(link => {
 
 //---------------------- HORÁRIOS --------------------------------------
 
-const toggles = document.querySelectorAll('.modulo-toggle');
+const moduloCards = document.querySelectorAll('.modulo-card');
 
-  toggles.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const modulo = btn.parentElement;
-      const grade = modulo.querySelector('.grade-horarios');
-      const seta = btn.querySelector('.seta');
-
-      const aberto = !grade.hasAttribute('hidden');
-
-      // Fecha todos os módulos
-      document.querySelectorAll('.grade-horarios').forEach(g => g.setAttribute('hidden', true));
-      document.querySelectorAll('.seta').forEach(s => s.textContent = '▲');
-
-      // Abre ou fecha atual
-      if (!aberto) {
-        grade.removeAttribute('hidden');
-        seta.textContent = '▼';
-      }
+    document.querySelectorAll('.icone-modulo').forEach(botao => {
+      botao.addEventListener('click', (e) => {
+        e.stopPropagation(); // Evita que clique afete o pai
+        const moduloCard = botao.closest('.modulo-card');
+        const grade = moduloCard.querySelector('.grade-horarios');
+        grade.classList.toggle('ativo');
+      });
     });
-  });

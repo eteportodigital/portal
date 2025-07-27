@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Lexend', sans-serif;
-  color: #F1F1F1;
+  color: #727272;
 }
 
 /* ---------------------------- NAVBAR ---------------------------- */
@@ -118,11 +118,12 @@ body {
 .conteudo-principal {
   position: relative;
   width: 100%;
+  margin-bottom: 434px;
 }
 
-/* Div roxo */
-.fundo-roxo {
-  background-color: #D0C6FF;
+/* Div verde */
+.fundo-verde {
+  background-color: #00E19A;
   height: 15.625rem; /* 250px */
   width: 100%;
   box-shadow: 0 1px 8px #2D2D2D;
@@ -132,7 +133,7 @@ body {
   border-bottom: 2px solid #2D2D2D;
 }
 
-.fundo-roxo > h3 {
+.fundo-verde > h3 {
   font-size: 4rem;
   padding: 85px;
   font-family: 'Lexend', sans-serif;
@@ -141,54 +142,84 @@ body {
   margin: 0;
 }
 
-.matriz-container {
-  margin-top: 5rem;
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 9.875rem;
-}
-
-.titulo{
+.titulo-docentes {
+  grid-column: 1 / -1; /* ocupar todas as colunas */
   font-family: 'Lexend', sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 1.75rem; /* 28px */
+  letter-spacing: 0.0875rem; /* 1.4px */
+  color: #2D2D2D;
+  margin-bottom: 1.188rem;
+  margin-top: 8rem;
 }
 
-.modulo-box {
-  width: 70.688rem;
-  height: 5.25rem;
-  background-color: #ffffff;
+/* Grid de 4 cards */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0;
+  width: 76rem;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  margin-top: 19px;
+}
+
+.grid-cards .card {
+  background-color: #FFFFFF;
   border: 1px solid #2D2D2D;
-  padding: 0px 32px 0px 32px;
   border-radius: 32px;
-  color: #2D2D2D;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 1px 1px #2D2D2D;
-  transition: box-shadow 0.3s ease;
+  height: 230px; /* mesma altura da missão */
+  border-radius: 1.438rem;
+  box-shadow: 0 9px 0px #E9D3DF, 0 10px 0 1px #2D2D2D; 
   text-decoration: none;
 }
 
-.modulo-box:hover {
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
-  transform: scale(1.01);
+.card-content {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0.3rem 2rem;
+  height: 100%;
 }
 
-.icone-download {
-  width: 42px;
-  height: 42px;
-  cursor: pointer;
-  transition: transform 0.2s;
+.card-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* preencher toda a altura do card-content */
 }
 
-.icone-download:hover {
-  transform: scale(1.06);
+.card-texto h3 {
+  font-size: 2rem;
+  color: #2D2D2D;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
 }
+
+.card-texto a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem; /* espaço entre texto e ícone */
+  font-size: 1.25rem;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  color: #2D2D2D;
+  letter-spacing: 0.125rem;
+  text-decoration: none;
+  border-bottom: 1px solid #2D2D2D;
+  padding-bottom: 0.1875rem; /* 3px */
+  margin-bottom: 2.313rem;
+  width: fit-content;
+}
+
+.siepe-icon {
+  width: 1rem; /* ou o tamanho que preferir */
+  margin-left: 0.188rem; /* 6.5px */
+}
+
 
 /*---------------------- Footer -----------------------------*/
 
