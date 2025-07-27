@@ -14,11 +14,12 @@ links.forEach(link => {
 
 const moduloCards = document.querySelectorAll('.modulo-card');
 
-    document.querySelectorAll('.icone-modulo').forEach(botao => {
-      botao.addEventListener('click', (e) => {
-        e.stopPropagation(); // Evita que clique afete o pai
-        const moduloCard = botao.closest('.modulo-card');
-        const grade = moduloCard.querySelector('.grade-horarios');
-        grade.classList.toggle('ativo');
-      });
-    });
+moduloCards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('ativo');
+  });
+
+  // Previne duplo clique no ícone de disparar duas vezes
+  const icon = card.querySelector('.icone-modulo');
+  icon.addEventListener('click', e => e.stopPropagation());
+});

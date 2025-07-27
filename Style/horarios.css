@@ -144,10 +144,10 @@ body {
 
 .modulo-card {
   width: 70.688rem;
-  height: 5.25rem;
+  
   background-color: #ffffff;
   border: 1px solid #2D2D2D;
-  padding: 0px 32px 0px 32px;
+  padding: 16px 32px 16px 32px;
   border-radius: 32px;
   color: #2D2D2D;
   font-weight: 600;
@@ -158,11 +158,32 @@ body {
   transition: box-shadow 0.3s ease;
   text-decoration: none;
   margin-bottom: 32px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  overflow: hidden; /* importante para esconder a imagem quando fechado */
+  flex-direction: column;
+}
+
+.modulo-card.ativo {
+  padding-bottom: 16px; /* espaço para imagem */
+}
+
+.modulo-card.ativo .grade-horarios {
+  max-height: 1000px; /* ou maior, conforme o tamanho da imagem */
+  opacity: 1;
+  margin-top: 10px;
 }
 
 .modulo-card:hover {
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
   transform: scale(1.01);
+}
+
+.cabecalho-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .modulo-texto {
@@ -177,16 +198,16 @@ body {
 }
 
 .grade-horarios {
-  margin-top: 16px;
-  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .imagem-horario {
-  width: 90%; /* ou um tamanho fixo como 700px */
-  max-width: 1000px;
-  height: auto;
+  width: 100%;
+  max-width: 100%;
   border-radius: 12px;
-  box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
+  height: auto;
 }
 
 
