@@ -17,12 +17,16 @@
     <nav class="navbar">
       <div class="logo">
         <img src="./Assets/Filled.svg" alt="">
-    </div>
+      </div>
       <ul class="nav-links">
         <li><a href="#">CURSO</a></li>
         <li><a href="#">INGRESSO</a></li>
         <li><a href="#">CAMPUS</a></li>
       </ul>
+      <!-- Menu hambúrguer para mobile -->
+      <div class="hamburger-menu">
+        <img src="./Assets/botao_mobile.svg" alt="Menu" class="hamburger-icon">
+      </div>
     </nav>
   </header>
 
@@ -37,7 +41,7 @@
         <li><a href="./Pages/avisos.html" class="sub-link">AVISOS</a></li>
         <li><a href="./Pages/documentos.html" class="sub-link">DOCUMENTOS</a></li>
         <li><a href="#" class="sub-link">EDITAIS</a></li>
-        <li><a href="#" class="sub-link">FAQ</a></li>
+        <li><a href="./Pages/faq.html" class="sub-link">FAQ</a></li>
       </ul>
     </div>
 
@@ -49,78 +53,113 @@
     </div>
   </nav>
 
+  <!---------------------- Menu Mobile Overlay --------------------------------->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-header">
+        <button class="close-menu" id="closeMenu">×</button>
+      </div>
+      
+      <div class="mobile-menu-title">
+        <h3>Desenvolvimento de Sistemas—Subsequente</h3>
+      </div>
+      
+      <nav class="mobile-nav">
+        <a href="#" class="mobile-nav-link">SOBRE</a>
+        <a href="./Pages/equipe.html" class="mobile-nav-link">EQUIPE</a>
+        <a href="./Pages/avisos.html" class="mobile-nav-link">AVISOS</a>
+        <a href="./Pages/documentos.html" class="mobile-nav-link">DOCUMENTOS</a>
+        <a href="#" class="mobile-nav-link">EDITAIS</a>
+        <a href="./Pages/faq.html" class="mobile-nav-link">FAQ</a>
+        <a href="https://www.siepe.educacao.pe.gov.br" class="mobile-nav-link">SIEPE</a>
+      </nav>
+      
+      <div class="mobile-menu-secondary">
+        <a href="#" class="mobile-secondary-link">CURSOS</a>
+        <a href="#" class="mobile-secondary-link">INGRESSO</a>
+        <a href="#" class="mobile-secondary-link">CAMPUS</a>
+      </div>
+      
+      <div class="mobile-menu-footer">
+        <p>eteportodigital@gmail.com | Avenida Rio Branco, 193 | 3181 - 4869 / 3161 - 4868</p>
+      </div>
+    </div>
+  </div>
+
   <!---------------------- Conteúdo Princpal ----------------------------->
 
   <section class="conteudo-principal">
     <div class="fundo-roxo"></div>
 
-    <div class="card-missao">
-      <h2>MISSÃO</h2>
-      <p>Promover a formação integral dos educandos, a fim de colaborar com o seu pensamento crítico o estabelecimento da autonomia e de suas atitudes enquanto cidadão, bem como, prepará-los para a vida profissional e acadêmica de nível superior.</p>
-    </div>
+      <div class="card-missao">
+        <h2>MISSÃO</h2>
+        <p>Promover a formação integral dos educandos, a fim de colaborar com o seu pensamento crítico o estabelecimento da autonomia e de suas atitudes enquanto cidadão, bem como, prepará-los para a vida profissional e acadêmica de nível superior.</p>
+      </div>
 
-    <div class="grid-cards">
-      <!-- CARD 1 -->
-      <a href="./Pages/calendario.html" class="card">
-        <div class="card-content">
-          <img src="./Assets/Calendario_Icone.svg" alt="Calendário Escolar">
-          <div class="card-texto">
-            <h3>CALENDÁRIO ESCOLAR</h3>
-            <p>Verifique o Calendário Escolar 2025 <br> da Rede Estadual de Educação</p>
+      <div class="grid-cards">
+        <!-- CARD 1 -->
+        <a href="./Pages/calendario.html" class="card">
+          <div class="card-content">
+            <img src="./Assets/Calendario_Icone.svg" alt="Calendário Escolar">
+            <div class="card-texto">
+              <h3>CALENDÁRIO ESCOLAR</h3>
+              <p>Verifique o Calendário Escolar 2025   
+              da Rede Estadual de Educação</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
 
-      <!-- CARD 2 -->
-      <a href="./Pages/matriz.html" class="card">
-        <div class="card-content">
-          <img src="./Assets/Matriz_Icone.svg" alt="Matriz Curricular">
-          <div class="card-texto">
-            <h3>MATRIZ CURRICULAR</h3>
-            <p>Confira as disciplinas que compõem <br> o curso de Desenvolvimento de Sistemas</p>
+        <!-- CARD 2 -->
+        <a href="./Pages/matriz.html" class="card">
+          <div class="card-content">
+            <img src="./Assets/Matriz_Icone.svg" alt="Matriz Curricular">
+            <div class="card-texto">
+              <h3>MATRIZ CURRICULAR</h3>
+              <p>Confira as disciplinas que compõem   
+               o curso de Desenvolvimento de Sistemas</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
 
-      <!-- CARD 3 -->
-      <a href="./Pages/horarios.html" class="card">
-        <div class="card-content">
-          <img src="./Assets/Relogio_icone.svg" alt="Horários">
-          <div class="card-texto">
-            <h3>HORÁRIOS</h3>
-            <p>Confira o Novo Horário de Aulas <br> 2025.2</p>
+        <!-- CARD 3 -->
+        <a href="./Pages/horarios.html" class="card">
+          <div class="card-content">
+            <img src="./Assets/Relogio_icone.svg" alt="Horários">
+            <div class="card-texto">
+              <h3>HORÁRIOS</h3>
+              <p>Confira o Novo Horário de Aulas 2025.2</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
 
-      <!-- CARD 4 -->
-      <a href="./Pages/roadmap.html" class="card">
-        <div class="card-content">
-          <img src="./Assets/Roadmap_Icone.svg" alt="Roadmap">
-          <div class="card-texto">
-            <h3>ROADMAP</h3>
-            <p>Conheça a Trajetória dos Alunos <br> Iniciantes do Módulo 1</p>
+        <!-- CARD 4 -->
+        <a href="./Pages/roadmap.html" class="card">
+          <div class="card-content">
+            <img src="./Assets/Roadmap_Icone.svg" alt="Roadmap">
+            <div class="card-texto">
+              <h3>ROADMAP</h3>
+              <p>Conheça a Trajetória dos Alunos Iniciantes do Módulo 1</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
     </div>
 
   </section>
 
-  <!---------------------- Footer ----------------------------->
+    <!---------------------- Footer ----------------------------->
 
-  <div class="barra"></div>
+    <div class="barra"></div>
 
-  <footer class="footer">
-    <div class="footer-contato">
-      <h2 class="duvidas">Dúvidas?</h2>
-      <p class="email-contato">Entre em contato pelo e-mail <br> @etepd.com</p>
-    </div>
+    <footer class="footer">
+      <div class="footer-contato">
+        <h2 class="duvidas">Dúvidas?</h2>
+        <p class="email-contato">Entre em contato pelo e-mail @etepd.com</p>
+      </div>
 
-    <div class="footer-inferior">
-      <p>eteportodigital@gmail.com |  Avenida Rio Branco, 193 |   3181 - 4869 / 3161 - 4868</p>
-    </div>
-  </footer>
+      <div class="footer-inferior">
+        <p>eteportodigital@gmail.com |  Avenida Rio Branco, 193 |   3181 - 4869 / 3161 - 4868</p>
+      </div>
+    </footer>
     
   <script src="./Scripts/index.js"></script>
 </body>

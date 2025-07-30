@@ -43,6 +43,18 @@ body {
   color: #00796b;
 }
 
+/* Menu hambúrguer - oculto por padrão */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  margin-right: 2.8125rem;
+}
+
+.hamburger-icon {
+  width: 24px;
+  height: 24px;
+}
+
 /* ---------------------------- SUBNAV ----------------------------*/
 
 .sub-navbar {
@@ -113,6 +125,110 @@ body {
   width: 100%;
 }
 
+/* ---------------------------- MENU MOBILE OVERLAY ---------------------------- */
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d2d2d;
+  z-index: 1000;
+  display: none;
+  overflow-y: auto;
+}
+
+.mobile-menu-content {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.close-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: end;
+  justify-content: right;
+}
+
+.mobile-menu-title {
+  margin-bottom: 40px;
+}
+
+.mobile-menu-title h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.mobile-nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.mobile-secondary-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-secondary-link:last-child {
+  border-bottom: none;
+}
+
+.mobile-menu-footer {
+  margin-top: auto;
+  padding: 1.5rem;
+}
+
+.mobile-menu-footer p {
+  color: white;
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0;
+  text-align: center;
+}
+
 /*---------------------- HORÁRIOS --------------------------------------*/
 
 .fundo-roxo {
@@ -144,7 +260,6 @@ body {
 
 .modulo-card {
   width: 70.688rem;
-  
   background-color: #ffffff;
   border: 1px solid #2D2D2D;
   padding: 16px 32px 16px 32px;
@@ -210,7 +325,6 @@ body {
   height: auto;
 }
 
-
 /*---------------------- Footer -----------------------------*/
 
 .barra{
@@ -260,4 +374,185 @@ body {
   color: #F1F1F1;
   text-align: center;
   padding: 0 20px;
+}
+
+/* ---------------------------- MEDIA QUERIES - RESPONSIVIDADE ---------------------------- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem;
+  }
+  
+  .logo {
+    margin-left: 1rem;
+  }
+  
+  .nav-links {
+    margin-right: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .sub-navbar {
+    padding: 0 1rem;
+  }
+  
+  .fundo-roxo > h3 {
+    font-size: 3rem;
+    padding: 60px;
+  }
+  
+  .horarios-section {
+    margin-top: 80px;
+  }
+  
+  .modulo-card {
+    width: 90%;
+    max-width: 50rem;
+  }
+  
+  .modulo-texto {
+    font-size: 1.8rem;
+  }
+  
+  .icone-modulo {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Navbar mobile */
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    display: block;
+  }
+  
+  .logo {
+    margin-left: 1rem;
+  }
+  
+  /* Sub-navbar mobile */
+  .sub-navbar {
+    display: none;
+  }
+  
+  /* Conteúdo principal mobile */
+  .fundo-roxo {
+  border: 2px solid #2D2D2D;
+  width: auto;
+  height: 7rem;
+
+  display: flex;
+  align-items: center; 
+  padding: 0 8px;     
+  }
+
+  .fundo-roxo > h3 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .horarios-section {
+    margin-top: 2rem;
+    padding: 0 1.5rem;;
+  }
+  
+  .modulo-card {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    border-radius: 20px;
+  }
+  
+  .modulo-texto {
+    font-size: 1.4rem;
+  }
+  
+  .icone-modulo {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .imagem-horario {
+    border-radius: 8px;
+  }
+  
+  /* Footer mobile */
+  .barra {
+    width: 12rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-contato .duvidas {
+    font-size: 1.5rem;
+  }
+  
+  .footer-contato .email-contato {
+    font-size: 1.2rem;
+  }
+  
+  .footer-inferior {
+    font-size: 1rem;
+    height: 8rem;
+    padding: 0 10px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .logo img{
+    width: 110px;
+    height: 110px;
+  }
+  
+  .navbar {
+    height: 3.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .fundo-roxo {
+    border: 2px solid #2D2D2D;
+    width: auto;
+    height: 7rem;
+    
+  }
+  
+  .fundo-roxo > h3 {
+    font-size: 1.5rem;
+    padding: 20px 15px;
+    text-align: left;
+  }
+  
+  .horarios-section {
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+  }
+  
+  .modulo-card {
+    padding: 10px 16px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .modulo-texto {
+    font-size: 1.2rem;
+  }
+  
+  .icone-modulo {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .footer-inferior {
+    font-size: 0.9rem;
+    height: 7rem;
+    width: auto;
+  }
 }
