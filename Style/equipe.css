@@ -43,6 +43,18 @@ body {
   color: #00796b;
 }
 
+/* Menu hambúrguer - oculto por padrão */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  margin-right: 2.8125rem;
+}
+
+.hamburger-icon {
+  width: 24px;
+  height: 24px;
+}
+
 /* ---------------------------- SUBNAV ----------------------------*/
 
 .sub-navbar {
@@ -113,7 +125,111 @@ body {
   width: 100%;
 }
 
-/* ---------------------------- Conteúdo Principal ----------------------------*/
+/* ---------------------------- MENU MOBILE OVERLAY ---------------------------- */
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d2d2d;
+  z-index: 1000;
+  display: none;
+  overflow-y: auto;
+}
+
+.mobile-menu-content {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.close-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: end;
+  justify-content: right;
+}
+
+.mobile-menu-title {
+  margin-bottom: 40px;
+}
+
+.mobile-menu-title h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.mobile-nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.mobile-secondary-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-secondary-link:last-child {
+  border-bottom: none;
+}
+
+.mobile-menu-footer {
+  margin-top: auto;
+  padding: 1.5rem;
+}
+
+.mobile-menu-footer p {
+  color: white;
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0;
+  text-align: center;
+}
+
+/* ---------------------------- Conteúdo Principal ---------------------------- */
 
 .conteudo-principal {
   position: relative;
@@ -215,7 +331,7 @@ body {
   width: fit-content;
 }
 
-.siepe-icon {
+.icon-equipe {
   width: 1rem; /* ou o tamanho que preferir */
   margin-left: 0.188rem; /* 6.5px */
 }
@@ -270,4 +386,219 @@ body {
   color: #F1F1F1;
   text-align: center;
   padding: 0 20px;
+}
+
+/* ---------------------------- MEDIA QUERIES - RESPONSIVIDADE ---------------------------- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem;
+  }
+  
+  .logo {
+    margin-left: 1rem;
+  }
+  
+  .nav-links {
+    margin-right: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .sub-navbar {
+    padding: 0 1rem;
+  }
+  
+  .fundo-verde > h3 {
+    font-size: 3rem;
+    padding: 60px;
+  }
+  
+  .grid-cards {
+    width: 90%;
+    gap: 1.5rem;
+  }
+  
+  .grid-cards .card {
+    height: 200px;
+  }
+  
+  .card-texto h3 {
+    font-size: 1.8rem;
+  }
+  
+  .card-texto a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Navbar mobile */
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    display: block;
+  }
+  
+  .logo {
+    margin-left: 1rem;
+  }
+  
+  /* Sub-navbar mobile */
+  .sub-navbar {
+    display: none;
+  }
+  
+  /* Conteúdo principal mobile */
+  .fundo-verde {
+    border: 2px solid #2D2D2D;
+    width: auto;
+    height: 12rem;
+
+    display: flex;
+    align-items: center; 
+    padding: 0 8px;
+  }
+  
+  .fundo-verde > h3 {
+    font-size: 1.8rem;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .conteudo-principal {
+    margin-bottom: 100px; /* Ajuste para mobile */
+  }
+  
+  .titulo-docentes {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .grid-cards {
+    grid-template-columns: 1fr; /* Cards em coluna */
+    width: 90%;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+  
+  .grid-cards .card {
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 0px #E9D3DF, 0 6px 0 1px #2D2D2D; /* Sombra ajustada */
+  }
+  
+  .card-content {
+    flex-direction: column; /* Conteúdo do card em coluna */
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  .card-texto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-texto a {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+  /* Footer mobile */
+  .barra {
+    width: 12rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-contato .duvidas {
+    font-size: 1.5rem;
+  }
+  
+  .footer-contato .email-contato {
+    font-size: 1.2rem;
+  }
+  
+  .footer-inferior {
+    font-size: 1rem;
+    height: 8rem;
+    padding: 0 10px;
+    width: auto;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .logo img{
+    width: 110px;
+    height: 110px;
+  }
+  
+  .navbar {
+    height: 3.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .fundo-verde {
+    border: 2px solid #2D2D2D;
+    width: auto;
+    height: 7rem;
+    
+
+    display: flex;
+    align-items: center; 
+    padding: 0 8px;
+  }
+  
+  .fundo-verde > h3 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  
+  .titulo-docentes {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 21px;
+  }
+  
+  .grid-cards {
+    gap: 1.5rem;
+  }
+  
+  .grid-cards .card {
+    border-radius: 16px;
+    padding: 0px 20px 20px 20px;
+  }
+
+  .card-content{
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .card-texto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2.125rem;
+    font-weight: bold;
+  }
+
+  .icon-equipe {
+    width: 0.7rem; /* ou o tamanho que preferir */
+    margin-left: 0.188rem; /* 6.5px */
+  }
+  
+  .card-texto a {
+    font-size: 0.7rem;
+  }
+  
+  .footer-inferior {
+    font-size: 0.9rem;
+    height: 7rem;
+    width: auto;
+  }
 }
