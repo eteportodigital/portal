@@ -1,5 +1,4 @@
 body {
-  position: relative;
   margin: 0;
   color: #4C8ECC; /* Cor principal de texto do novo padrão */
   font-family: "Viga", sans-serif;
@@ -195,7 +194,7 @@ body {
   text-align: center;
 }
 
-/* ---------------------------- Conteúdo Principal (Editais) ---------------------------- */
+/* ---------------------------- Conteúdo Principal (Projetos) ---------------------------- */
 
 .conteudo-principal {
   padding: 3rem 20.5rem; /* Padrão de padding do index */
@@ -210,41 +209,44 @@ body {
   font-family: "Viga", sans-serif;
 }
 
-.lista-editais {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.secao-projeto {
+  position: relative;
+  width: 100%;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  overflow: hidden; /* Garante que a imagem e o overlay fiquem dentro do raio */
 }
 
-.edital-item {
-  padding-bottom: 1.5rem;
+.imagem-projeto {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.edital-item:last-child {
-  border-bottom: none;
+.overlay-projeto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(48, 78, 197, 0.5), rgba(81, 178, 205, 0));
+  padding: 2rem 5%;
+  color: white;
 }
 
-.edital-titulo {
-  color: #4C8ECC; /* Cor dos títulos dos editais */
-  font-size: 1.8rem;
-  font-weight: 400;
-  margin: 0;
-  cursor: pointer;
-  transition: color 0.3s;
+.titulo-projeto {
   font-family: "Viga", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
 }
 
-.edital-titulo:hover {
-  color: #304EC5; /* Um tom mais escuro no hover */
-}
-
-.edital-descricao {
-  color: #4C8ECC; /* Cor de texto secundária */
-  font-size: 1rem;
-  font-weight: 300;
-  margin-top: 0.5rem;
-  margin-bottom: 0;
+.descricao-projeto {
   font-family: 'Lexend', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 0;
+  max-width: 80%;
 }
 
 /* ---------------------------- FOOTER -----------------------------*/
@@ -341,7 +343,7 @@ body {
 }
 
 .decorativo-bottom {
-  bottom: 0;
+  bottom: -20rem;
   left: -70rem;
   transform: scaleX(-1);
 }
@@ -357,6 +359,14 @@ body {
   
   .nav-links {
     gap: 2rem;
+  }
+  
+  .titulo-projeto {
+    font-size: 2rem;
+  }
+  
+  .descricao-projeto {
+    font-size: 1rem;
   }
 }
 
@@ -399,12 +409,17 @@ body {
     margin-bottom: 1.5rem;
   }
   
-  .edital-titulo {
-    font-size: 1.4rem;
+  .overlay-projeto {
+    padding: 1.5rem 1rem;
   }
   
-  .edital-descricao {
+  .titulo-projeto {
+    font-size: 1.5rem;
+  }
+  
+  .descricao-projeto {
     font-size: 0.9rem;
+    max-width: 100%;
   }
   
   /* Footer mobile */
@@ -441,5 +456,9 @@ body {
   
   .footer-endereco {
     font-size: 1rem;
+  }
+  
+  .decorativo {
+    display: none; /* Esconde os vetores no mobile para não atrapalhar a visualização */
   }
 }

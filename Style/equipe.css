@@ -1,46 +1,32 @@
 body {
   margin: 0;
-  font-family: 'Lexend', sans-serif;
-  color: #727272;
+  color: #4C8ECC; /* Cor principal de texto do novo padrão */
+  font-family: "Viga", sans-serif;
+  overflow-x: hidden;
 }
 
-/* ---------------------------- NAVBAR ---------------------------- */
+/* ---------------------------- NAVBAR (HEADER) ---------------------------- */
 
-.navbar {
+.header {
   display: flex;
-  justify-content: space-between;
+  gap: 22px;
   align-items: center;
-  height: 6.313rem;
-  background-color: #f1f1f1;
-  padding: 1rem 2rem;
-  height: 4.5rem;
+  background-color: #FFFFFF;
+  padding: 0rem 20.125rem;
+  height: 6.563rem; /* 105px de altura */
 }
 
-.logo {
-  margin-left: 2.8125rem; /* 45px */
-  font-size: 1.5rem;
-  font-weight: 600;
+
+.logo img {
+  margin-left: 2.8125rem;
+  width: 7.063rem; /* 161px de tamanho */
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2.25rem;
-  margin-right: 2.8125rem; /* 45px */
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  font-family: 'Lexend', sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem; /* 20px */
-  letter-spacing: 0.625rem; /* 10px */
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #00796b;
+.header-title {
+  color: #4C8ECC;
+  font-size: 1.938rem;
+  font-weight: 400;
+  font-family: "Viga", sans-serif;
 }
 
 /* Menu hambúrguer - oculto por padrão */
@@ -55,73 +41,52 @@ body {
   height: 24px;
 }
 
-/* ---------------------------- SUBNAV ----------------------------*/
+/* ---------------------------- SUBNAV (NAVBAR) ----------------------------*/
 
-.sub-navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2d2d2d;
-  height: 9.75rem;
-  padding: 0 2.8125rem; /* 45px nas laterais */
+  background: linear-gradient(to right, #51B2CD, #304EC5);
+  height: 4rem;
+  padding: 0rem 20.5rem;
 }
 
-.sub-navbar-content {
+.navbar-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.sub-navbar-title {
-  color: white;
-  font-size: 2rem; /* 20px ou ajuste conforme o design */
-  font-weight: 600;
-  margin-bottom: 0;
-  margin-top: 3.2rem;
-}
-
-.sub-nav-links {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 1.875rem;
-  padding: 1.5rem 0;
-  margin-top: 10px;
+  gap: 6.25rem;
 }
 
-.sub-link {
+.navbar-link {
   position: relative;
   text-decoration: none;
   color: white;
   font-weight: 400;
-  font-size: 1.5rem; /* 24px */
-  padding-bottom: 1rem;
-  transition: color 0.3s;
+  font-size: 1.25rem; /* 20px */
 }
 
-.sub-link::after {
+
+.navbar-link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -6px;
   left: 0;
   width: 0%;
-  height: 0.875rem; /* 14px */
-  border-radius: 999px;
+  height: 0.25rem; /* 5px */
+  border-radius: 100px;
   background-color: white;
   transition: width 0.3s ease-in-out;
 }
 
-.siepe{
-  margin-top: 84px;
-}
-
-.siepe-icon {
-  width: 1rem; /* ou o tamanho que preferir */
-  height: auto;
-  margin-left: 0.2rem; /* 6.5px */
-}
-
-.sub-link:hover::after,
-.sub-link.active::after {
+.navbar-link:hover::after,
+.navbar-link.active::after {
   width: 100%;
 }
 
@@ -229,124 +194,81 @@ body {
   text-align: center;
 }
 
-/* ---------------------------- Conteúdo Principal ---------------------------- */
+/* ---------------------------- Conteúdo Principal (Equipe) ---------------------------- */
 
 .conteudo-principal {
-  position: relative;
-  width: 100%;
-  margin-bottom: 434px;
+  padding: 3rem 20.5rem; /* Padrão de padding do index */
+  min-height: 50vh; /* Garante um tamanho mínimo */
 }
 
-/* Div verde */
-.fundo-verde {
-  background-color: #00E19A;
-  height: 15.625rem; /* 250px */
-  width: 100%;
-  box-shadow: 0 1px 8px #2D2D2D;
-  position: relative;
-  z-index: 1;
-  border-radius: 0 0 35px 35px;
-  border-bottom: 2px solid #2D2D2D;
+.titulo-pagina {
+  color: #4C8ECC; /* Cor do título principal */
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 5.125rem;
+  font-family: "Viga", sans-serif;
 }
 
-.fundo-verde > h3 {
-  font-size: 4rem;
-  padding: 85px;
+.grid-equipe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas para desktop */
+  gap: 2rem;
+}
+
+.membro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.membro-foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #51B2CD; /* Borda colorida para destaque */
+}
+
+.membro-nome {
+  font-family: "Viga", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #4C8ECC;
+  margin: 0 0 0.2rem 0;
+}
+
+.membro-cargo {
   font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
   font-weight: 600;
-  color: #2D2D2D;
+  color: #304EC5; /* Cor de destaque para o cargo */
+  margin: 0 0 1rem 0;
+}
+
+.membro-descricao {
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #727272;
   margin: 0;
 }
 
-.titulo-docentes {
-  grid-column: 1 / -1; /* ocupar todas as colunas */
-  font-family: 'Lexend', sans-serif;
-  font-weight: 400;
-  font-size: 1.75rem; /* 28px */
-  letter-spacing: 0.0875rem; /* 1.4px */
-  color: #2D2D2D;
-  margin-bottom: 1.188rem;
-  margin-top: 8rem;
-}
-
-/* Grid de 4 cards */
-.grid-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 0;
-  width: 76rem;
-  margin: 0 auto;
-  z-index: 1;
-  position: relative;
-  margin-top: 19px;
-}
-
-.grid-cards .card {
-  background-color: #FFFFFF;
-  border: 1px solid #2D2D2D;
-  border-radius: 32px;
-  height: 230px; /* mesma altura da missão */
-  border-radius: 1.438rem;
-  box-shadow: 0 9px 0px #E9D3DF, 0 10px 0 1px #2D2D2D; 
-  text-decoration: none;
-}
-
-.card-content {
-  display: flex;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 0.3rem 2rem;
-  height: 100%;
-}
-
-.card-texto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; /* preencher toda a altura do card-content */
-}
-
-.card-texto h3 {
-  font-size: 2rem;
-  color: #2D2D2D;
-  font-family: 'Lexend', sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.04rem;
-}
-
-.card-texto a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem; /* espaço entre texto e ícone */
-  font-size: 1.25rem;
-  font-family: 'Lexend', sans-serif;
-  font-weight: 600;
-  color: #2D2D2D;
-  letter-spacing: 0.125rem;
-  text-decoration: none;
-  border-bottom: 1px solid #2D2D2D;
-  padding-bottom: 0.1875rem; /* 3px */
-  margin-bottom: 2.313rem;
-  width: fit-content;
-}
-
-.icon-equipe {
-  width: 1rem; /* ou o tamanho que preferir */
-  margin-left: 0.188rem; /* 6.5px */
-}
-
-
-/*---------------------- Footer -----------------------------*/
+/* ---------------------------- FOOTER -----------------------------*/
 
 .barra{
   margin: auto;
-  width: 18.063rem;
-  height: 1.125rem;
-  border-radius: 100px;
-  background-color: #2D2D2D;
-  margin-top: 8rem;
-  margin-bottom: 3.25rem;
+  width: 100%;
+  height: 0.188rem;
+  background: linear-gradient(to right, #51B2CD, #304EC5);
+  margin-top: 5.313rem;
+  margin-bottom: 3.438rem;
 }
 
 .footer {
@@ -361,80 +283,111 @@ body {
 }
 
 .footer-contato .duvidas {
-  color: #2D2D2D;
-  font-size: 2rem; /* equivalente a 32px */
-  margin-bottom: 0.5rem;
-  font-family: 'Lexend', sans-serif;
+  color: #4C8ECC;
+  font-size: 1.563rem; /* equivalente a 25px */
+  margin-bottom: 1.313rem;
   font-weight: 600;
 }
 
 .footer-contato .email-contato {
-  color: #2D2D2D;
-  font-size: 1.5rem; /* equivalente a 24px */
+  color: #4C8ECC;
+  font-size: 1.25rem; /* equivalente a 20px */
   font-family: 'Lexend', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .footer-inferior {
-  font-size: 1.5rem;
-  font-weight: 600;
-  background-color: #2D2D2D;
-  height: 11.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(to right, #51B2CD, #304EC5);
   color: #F1F1F1;
+  padding: 3.063rem 20px;
   text-align: center;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column; /* organiza em coluna */
+  gap: 2rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px; /* limite para não ficar muito espalhado */
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem; /* diminui o espaço entre título e valor */
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+.footer-col p{
+  margin: 0;
+}
+
+.footer-col p:first-child {
+  font-weight: 600;
+}
+
+.footer-endereco {
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+/* ---------------------------- VETORES DA PÁGINA ---------------------------- */
+
+.decorativo {
+  position: absolute;
+  width: 95.813rem;
+  height: 44.182rem;
+  pointer-events: none;
+  opacity: 1;
+  z-index: -1;
+}
+
+.decorativo-center {
+  top: 0%;
+  right: -180px;
+  transform: rotate(-180deg);
+}
+
+.decorativo-bottom {
+  bottom: -40rem;
+  left: -70rem;
+  transform: scaleX(-1);
 }
 
 /* ---------------------------- MEDIA QUERIES - RESPONSIVIDADE ---------------------------- */
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .navbar {
-    padding: 1rem;
-  }
-  
-  .logo {
-    margin-left: 1rem;
+  .header, .navbar, .conteudo-principal {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   
   .nav-links {
-    margin-right: 1rem;
-    gap: 1.5rem;
+    gap: 2rem;
   }
   
-  .sub-navbar {
-    padding: 0 1rem;
-  }
-  
-  .fundo-verde > h3 {
-    font-size: 3rem;
-    padding: 60px;
-  }
-  
-  .grid-cards {
-    width: 90%;
-    gap: 1.5rem;
-  }
-  
-  .grid-cards .card {
-    height: 200px;
-  }
-  
-  .card-texto h3 {
-    font-size: 1.8rem;
-  }
-  
-  .card-texto a {
-    font-size: 1.1rem;
+  .grid-equipe {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas no tablet */
   }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   /* Navbar mobile */
+  .header {
+    padding: 0rem 1rem;
+  }
+  
+  .header-title {
+    font-size: 1.2rem;
+  }
+  
   .nav-links {
     display: none;
   }
@@ -443,162 +396,85 @@ body {
     display: block;
   }
   
-  .logo {
-    margin-left: 1rem;
+  .logo img {
+    margin-left: 0;
+    width: 5rem;
   }
   
   /* Sub-navbar mobile */
-  .sub-navbar {
-    display: none;
+  .navbar {
+    display: none; /* Sub-navbar é escondida no mobile, pois o menu hamburguer a substitui */
   }
   
   /* Conteúdo principal mobile */
-  .fundo-verde {
-    border: 2px solid #2D2D2D;
-    width: auto;
-    height: 12rem;
-
-    display: flex;
-    align-items: center; 
-    padding: 0 8px;
-  }
-  
-  .fundo-verde > h3 {
-    font-size: 1.8rem;
-    padding: 30px 20px;
-    text-align: center;
-  }
-  
   .conteudo-principal {
-    margin-bottom: 100px; /* Ajuste para mobile */
+    padding: 2rem 1rem;
   }
   
-  .titulo-docentes {
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    text-align: center;
+  .titulo-pagina {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
   
-  .grid-cards {
-    grid-template-columns: 1fr; /* Cards em coluna */
-    width: 90%;
-    padding: 0 1rem;
-    gap: 1rem;
+  .grid-equipe {
+    grid-template-columns: 1fr; /* 1 coluna no mobile */
+    gap: 1.5rem;
   }
   
-  .grid-cards .card {
-    height: auto; /* Altura automática para se ajustar ao conteúdo */
-    padding: 1rem;
-    border-radius: 20px;
-    box-shadow: 0 5px 0px #E9D3DF, 0 6px 0 1px #2D2D2D; /* Sombra ajustada */
+  .membro-foto {
+    width: 100px;
+    height: 100px;
   }
   
-  .card-content {
-    flex-direction: column; /* Conteúdo do card em coluna */
-    align-items: center;
-    text-align: center;
-    padding: 0.5rem;
+  .membro-nome {
+    font-size: 1.3rem;
   }
   
-  .card-texto h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  .membro-cargo {
+    font-size: 0.9rem;
   }
   
-  .card-texto a {
-    font-size: 1rem;
-    margin-bottom: 0;
+  .membro-descricao {
+    font-size: 0.8rem;
   }
   
   /* Footer mobile */
   .barra {
-    width: 12rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-contato {
     margin-bottom: 2rem;
   }
   
   .footer-contato .duvidas {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   
   .footer-contato .email-contato {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
   .footer-inferior {
+    padding: 2rem 1rem;
+  }
+  
+  .footer-info {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .footer-col {
     font-size: 1rem;
-    height: 8rem;
-    padding: 0 10px;
-    width: auto;
-  }
-}
-
-/* Mobile pequeno */
-@media (max-width: 480px) {
-  .logo img{
-    width: 110px;
-    height: 110px;
   }
   
-  .navbar {
-    height: 3.5rem;
-    padding: 0.5rem 1rem;
-  }
-  
-  .fundo-verde {
-    border: 2px solid #2D2D2D;
-    width: auto;
-    height: 7rem;
-    
-
-    display: flex;
-    align-items: center; 
-    padding: 0 8px;
-  }
-  
-  .fundo-verde > h3 {
-    font-size: 1.5rem;
-    text-align: left;
-  }
-  
-  .titulo-docentes {
+  .footer-endereco {
     font-size: 1rem;
-    text-align: left;
-    margin-top: 21px;
   }
   
-  .grid-cards {
-    gap: 1.5rem;
-  }
-  
-  .grid-cards .card {
-    border-radius: 16px;
-    padding: 0px 20px 20px 20px;
-  }
-
-  .card-content{
-    align-items: flex-start;
-    padding: 0;
-  }
-
-  .card-texto h3 {
-    font-size: 1.2rem;
-    margin-bottom: 2.125rem;
-    font-weight: bold;
-  }
-
-  .icon-equipe {
-    width: 0.7rem; /* ou o tamanho que preferir */
-    margin-left: 0.188rem; /* 6.5px */
-  }
-  
-  .card-texto a {
-    font-size: 0.7rem;
-  }
-  
-  .footer-inferior {
-    font-size: 0.9rem;
-    height: 7rem;
-    width: auto;
+  .decorativo {
+    display: none; /* Esconde os vetores no mobile para não atrapalhar a visualização */
   }
 }

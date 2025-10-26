@@ -7,24 +7,19 @@
   <link rel="stylesheet" href="../Style/equipe.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Viga&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Viga&family=Lexend:wght@100..900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!---------------------- NavBar --------------------------------->
 
   <header>
-    <nav class="navbar">
+    <nav class="header">
       <div class="logo">
-        <a href="../index.html">
-        <img src="../Assets/Filled.svg" alt="">
-        </a>
+        <img src="../Assets/logo_etepd.svg" alt="">
       </div>
-      <ul class="nav-links">
-        <li><a href="#">CURSO</a></li>
-        <li><a href="#">INGRESSO</a></li>
-        <li><a href="#">CAMPUS</a></li>
-      </ul>
+      <h3 class="header-title">Desenvolvimento de Sistemas</h3>
       <!-- Menu hambúrguer para mobile -->
       <div class="hamburger-menu">
         <img src="../Assets/botao_mobile.svg" alt="Menu" class="hamburger-icon">
@@ -34,24 +29,20 @@
 
   <!---------------------- SubBar --------------------------------->
     
-  <nav class="sub-navbar">
-    <div class="sub-navbar-content">
-      <h3 class="sub-navbar-title">Desenvolvimento de Sistemas — Subsequente</h3>
-      <ul class="sub-nav-links">
-        <li><a href="../index.html" class="sub-link">SOBRE</a></li>
-        <li><a href="#" class="sub-link active">EQUIPE</a></li>
-        <li><a href="../Pages/avisos.html" class="sub-link">AVISOS</a></li>
-        <li><a href="../Pages/documentos.html" class="sub-link">DOCUMENTOS</a></li>
-        <li><a href="#" class="sub-link">EDITAIS</a></li>
-        <li><a href="../Pages/faq.html" class="sub-link">FAQ</a></li>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <ul class="nav-links">
+        <li><a href="../index.html" class="navbar-link">Sobre</a></li>
+        <li><a href="../Pages/equipe.html" class="navbar-link active">Equipe</a></li>
+        <li><a href="../Pages/avisos.html" class="navbar-link">Avisos</a></li>
+        <li><a href="../Pages/projetos.html" class="navbar-link">Projetos</a></li>
+        <li><a href="../Pages/documentos.html" class="navbar-link">Editais</a></li>
+        <li><a href="../Pages/faq.html" class="navbar-link">FAQ</a></li>
       </ul>
     </div>
 
     <div class="siepe">
-      <a href="https://www.siepe.educacao.pe.gov.br" class="sub-link">
-        SIEPE
-        <img src="../Assets/icone_SIEPE.svg" class="siepe-icon" />
-      </a>
+      <a href="https://www.siepe.educacao.pe.gov.br" class="navbar-link">Siepe</a>
     </div>
   </nav>
 
@@ -70,7 +61,7 @@
         <a href="../index.html" class="mobile-nav-link">SOBRE</a>
         <a href="../Pages/equipe.html" class="mobile-nav-link">EQUIPE</a>
         <a href="../Pages/avisos.html" class="mobile-nav-link">AVISOS</a>
-        <a href="../Pages/documentos.html" class="mobile-nav-link">DOCUMENTOS</a>
+        <a href="../Pages/documentos.html" class="mobile-nav-link">PROJETOS</a>
         <a href="#" class="mobile-nav-link">EDITAIS</a>
         <a href="../Pages/faq.html" class="mobile-nav-link">FAQ</a>
         <a href="https://www.siepe.educacao.pe.gov.br" class="mobile-nav-link">SIEPE</a>
@@ -88,69 +79,63 @@
     </div>
   </div>
 
-  <!---------------------- Conteúdo Princpal ----------------------------->
+  <!---------------------- Conteúdo Principal ----------------------------->
 
-    <div class="fundo-verde">
-        <h3>Equipe ETEPD</h3>
+  <main class="conteudo-principal">
+    <h1 class="titulo-pagina">Equipe</h1>
+
+    <div class="grid-equipe">
+      
+      <!-- Card de Professor 1 -->
+      <div class="membro-card">
+        <img src="../Assets/placeholder-professor.png" alt="Foto do Professor" class="membro-foto">
+        <h2 class="membro-nome">Prof. João da Silva</h2>
+        <p class="membro-cargo">Coordenador do Curso</p>
+        <p class="membro-descricao">Especialista em Desenvolvimento Web e Banco de Dados. Responsável pela gestão pedagógica do curso.</p>
+      </div>
+
+      <!-- Card de Professor 2 -->
+      <div class="membro-card">
+        <img src="../Assets/placeholder-professor.png" alt="Foto da Professora" class="membro-foto">
+        <h2 class="membro-nome">Profa. Maria Oliveira</h2>
+        <p class="membro-cargo">Professora de Lógica de Programação</p>
+        <p class="membro-descricao">Mestre em Ciência da Computação. Foco em algoritmos e estruturas de dados.</p>
+      </div>
+
+      <!-- Card de Professor 3 -->
+      <div class="membro-card">
+        <img src="../Assets/placeholder-professor.png" alt="Foto do Professor" class="membro-foto">
+        <h2 class="membro-nome">Prof. Pedro Santos</h2>
+        <p class="membro-cargo">Professor de Redes e Infraestrutura</p>
+        <p class="membro-descricao">Técnico em Redes. Atua na área de segurança e arquitetura de sistemas.</p>
+      </div>
+
+      <!-- Card de Professor 4 -->
+      <div class="membro-card">
+        <img src="../Assets/placeholder-professor.png" alt="Foto da Professora" class="membro-foto">
+        <h2 class="membro-nome">Profa. Ana Costa</h2>
+        <p class="membro-cargo">Professora de Design UX/UI</p>
+        <p class="membro-descricao">Designer com foco em experiência do usuário e interfaces intuitivas.</p>
+      </div>
+      
+      <!-- Card de Professor 5 (Exemplo de Suporte) -->
+      <div class="membro-card">
+        <img src="../Assets/placeholder-professor.png" alt="Foto do Membro da Equipe" class="membro-foto">
+        <h2 class="membro-nome">José Almeida</h2>
+        <p class="membro-cargo">Apoio Técnico e Laboratório</p>
+        <p class="membro-descricao">Suporte na manutenção de equipamentos e auxílio em atividades práticas.</p>
+      </div>
+
+      <!-- Card de Professor 6 -->
+      <div class="membro-card">
+        <img src="../Assets/placeholder-professor.png" alt="Foto do Professor" class="membro-foto">
+        <h2 class="membro-nome">Prof. Carlos Lima</h2>
+        <p class="membro-cargo">Professor de Programação Mobile</p>
+        <p class="membro-descricao">Desenvolvedor de aplicativos com experiência em Android e iOS.</p>
+      </div>
+
     </div>
-
-    <main class="conteudo-principal">   
-        <div class="grid-cards">
-            <h2 class="titulo-docentes">DOCENTES</h2>
-            <!-- CARD 1 -->
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-texto">
-                        <h3>Pedro Henrique Albino</h3>
-                        <a href="http://lattes.cnpq.br/2099679515239274">
-                            LATTES
-                            <img src="../Assets/icone_equipe.svg" class="icon-equipe" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-texto">
-                        <h3>Sandra Chacon Tavares </h3>
-                        <a href="http://lattes.cnpq.br/3604417130817872">
-                            LATTES
-                            <img src="../Assets/icone_equipe.svg" class="icon-equipe" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-texto">
-                        <h3>Valéria Pereira Fagundes</h3>
-                        <a href="http://lattes.cnpq.br/1520737525859603">
-                            LATTES
-                            <img src="../Assets/icone_equipe.svg" class="icon-equipe" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-texto">
-                        <h3>Waldeck Antônio</h3>
-                        <a href="http://lattes.cnpq.br/2944793060593092">
-                            LATTES
-                            <img src="../Assets/icone_equipe.svg" class="icon-equipe" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
+  </main>
 
   <!---------------------- Footer ----------------------------->
 
@@ -159,13 +144,28 @@
   <footer class="footer">
     <div class="footer-contato">
       <h2 class="duvidas">Dúvidas?</h2>
-      <p class="email-contato">Entre em contato pelo e-mail @etepd.com</p>
+      <p class="email-contato">Entre em contato pelo e-mail <br> acrm@etepd.com</p>
     </div>
 
     <div class="footer-inferior">
-      <p>eteportodigital@gmail.com | Avenida Rio Branco, 193 | 3181 - 4869 / 3161 - 4868</p>
+      <div class="footer-info">
+        <div class="footer-col">
+          <p>Email</p>
+          <p>eteportodigital@gmail.com</p>
+        </div>
+        <div class="footer-col">
+          <p>Contato</p>
+          <p>3181-4869 / 3161-4868</p>
+        </div>
+      </div>
+      <div class="footer-endereco">
+        <p>Avenida Rio Branco, 193 - Bairro do Recife Recife / PE - CEP 50030-310 </p>
+      </div>
     </div>
   </footer>
+
+  <img src="../Assets/Vector.svg" alt="decorativo" class="decorativo decorativo-bottom">
+  <img src="../Assets/Vector.svg" alt="decorativo" class="decorativo decorativo-center">
     
   <script src="../Scripts/equipe.js"></script>
 </body>

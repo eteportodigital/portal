@@ -1,46 +1,32 @@
 body {
   margin: 0;
-  font-family: 'Lexend', sans-serif;
-  color: #F1F1F1;
+  color: #FFFFFF;
+  font-family: "Viga", sans-serif;
+  overflow-x: hidden;
 }
 
 /* ---------------------------- NAVBAR ---------------------------- */
 
-.navbar {
+.header {
   display: flex;
-  justify-content: space-between;
+  gap: 22px;
   align-items: center;
-  height: 6.313rem;
-  background-color: #f1f1f1;
-  padding: 1rem 2rem;
-  height: 4.5rem;
+  background-color: #FFFFFF;
+  padding: 0rem 20.125rem;
+  height: 6.563rem; /* 105px de altura */
 }
 
-.logo {
-  margin-left: 2.8125rem; /* 45px */
-  font-size: 1.5rem;
-  font-weight: 600;
+
+.logo img {
+  margin-left: 2.8125rem;
+  width: 7.063rem; /* 161px de tamanho */
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2.25rem;
-  margin-right: 2.8125rem; /* 45px */
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  font-family: 'Lexend', sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem; /* 20px */
-  letter-spacing: 0.625rem; /* 10px */
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #00796b;
+.header-title {
+  color: #4C8ECC;
+  font-size: 1.938rem;
+  font-weight: 400;
+  font-family: "Viga", sans-serif;
 }
 
 /* Menu hambúrguer - oculto por padrão */
@@ -57,71 +43,50 @@ body {
 
 /* ---------------------------- SUBNAV ----------------------------*/
 
-.sub-navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2d2d2d;
-  height: 9.75rem;
-  padding: 0 2.8125rem; /* 45px nas laterais */
+  background: linear-gradient(to right, #51B2CD, #304EC5);
+  height: 4rem;
+  padding: 0rem 20.5rem;
 }
 
-.sub-navbar-content {
+.navbar-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.sub-navbar-title {
-  color: white;
-  font-size: 2rem; /* 20px ou ajuste conforme o design */
-  font-weight: 600;
-  margin-bottom: 0;
-  margin-top: 3.2rem;
-}
-
-.sub-nav-links {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 1.875rem;
-  padding: 1.5rem 0;
-  margin-top: 10px;
+  gap: 6.25rem;
 }
 
-.sub-link {
+.navbar-link {
   position: relative;
   text-decoration: none;
   color: white;
   font-weight: 400;
-  font-size: 1.5rem; /* 24px */
-  padding-bottom: 1rem;
-  transition: color 0.3s;
+  font-size: 1.25rem; /* 20px */
 }
 
-.sub-link::after {
+
+.navbar-link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -6px;
   left: 0;
   width: 0%;
-  height: 0.875rem; /* 14px */
-  border-radius: 999px;
+  height: 0.25rem; /* 5px */
+  border-radius: 100px;
   background-color: white;
   transition: width 0.3s ease-in-out;
 }
 
-.siepe{
-  margin-top: 84px;
-}
-
-.siepe-icon {
-  width: 1rem; /* ou o tamanho que preferir */
-  height: auto;
-  margin-left: 0.2rem; /* 6.5px */
-}
-
-.sub-link:hover::after,
-.sub-link.active::after {
+.navbar-link:hover::after,
+.navbar-link.active::after {
   width: 100%;
 }
 
@@ -236,114 +201,94 @@ body {
   width: 100%;
 }
 
-/* Div roxo */
-.fundo-roxo {
-  background-color: #D0C6FF;
-  height: 15.625rem; /* 250px */
+.carrossel-imagens img {
   width: 100%;
-  box-shadow: 0 1px 8px #2D2D2D;
-  position: relative;
-  z-index: 1;
-  border-radius: 0 0 35px 35px;
-  border-bottom: 2px solid #2D2D2D;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-/* Card da missão */
-.card-missao {
-  background-color: white;
-  width: 76rem; /* 1216px */
-  height: 13.75rem; /* 220px */
-  margin: 0 auto;
-  position: absolute;
-  top: 9rem; /* sobe parcialmente sobre a div amarela */
-  left: 0;
-  right: 0;
-  box-shadow: 0 9px 0px #E9D3DF, 0 10px 0 1px #2D2D2D; 
-  border-radius: 32px;
-  border: 1px solid #2D2D2D;
-  padding: 2rem;
-  z-index: 2;
+.barra-azul{
+  width: 100%;
+  height: 1.25rem;
+  background: linear-gradient(to right, #51B2CD, #304EC5);
+  margin: 0;
 }
 
-/* Título e parágrafo da missão */
-.card-missao h2 {
-  color: #676767;
-  font-size: 1.5rem;
-  letter-spacing: 0.15rem;
-  font-family: 'Lexend', sans-serif;
-  font-weight: 600;
-  margin-bottom: 1rem;
+.conteudo-principal-texto {
+  padding: 0 20.5rem; /* padroniza com o resto */
+  
 }
 
-.card-missao p {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  font-family: 'Lexend', sans-serif;
-  color: #2D2D2D;
+.conteudo-principal-titulo {
+  color: #4C8ECC;
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
 }
 
-/* Grid de 4 cards */
-.grid-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 10rem 0 5rem 0;
-  max-width: 76rem;
-  margin: 0 auto;
-  z-index: 1;
-  position: relative;
-  margin-top: 95px;
-}
-
-.grid-cards .card {
-  background-color: #FFDD88;
-  border: 1px solid #2D2D2D;
-  border-radius: 32px;
-  height: 13.75rem; /* mesma altura da missão */
-  border-radius: 1.438rem;
-  box-shadow: 0 9px 0px #E9D3DF, 0 10px 0 1px #2D2D2D; 
-  text-decoration: none;
-}
-
-.card-content {
-  display: flex;
+.conteudo-principal-button {
+  display: inline-flex;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: #00387B;
+  border-radius: 100px;
+  font-size: 1.688rem;
+  font-weight: 100;
+  text-decoration: none; /* remove sublinhado do link */
+  padding: 13px 35px; /* espaçamento interno */
+  margin-bottom: 2.875rem;
 }
 
-.card-content img {
-  width: 5rem; /* ajuste conforme tamanho das imagens reais */
+.imagem-section img{
+  width: 100%;
+}
+
+.conteudo-principal-informacoes {
+  display: flex;
+  flex-direction: column; /* cards ficam um embaixo do outro */
+  gap: 2.125rem 0rem;
+  padding: 0 20.5rem; /* mesmo padrão do resto do site */
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.conteudo-principal-informacoes > div {
+  display: flex;
+  align-items: center; /* alinha imagem e texto pelo topo */
+  gap: 1.063rem; /* espaço entre imagem e textos */
+  
+}
+
+.conteudo-principal-informacoes img {
+  width: 70px; /* controla o tamanho da imagem */
   height: auto;
-  flex-shrink: 0;
 }
 
-.card-texto h3 {
-  font-size: 1.25rem;
-  letter-spacing: 0.15rem;
-  color: #2D2D2D;
-  font-family: 'Lexend', sans-serif;
-  font-weight: 600;
-  margin-bottom: 1.25rem;
+.conteudo-principal-informacoes p:first-child {
+  font-size: 2.188rem;
+  color: #4C8ECC;
+  margin: 0;
 }
 
-.card-texto p {
-  font-size: 1.15rem;
-  font-family: 'Lexend', sans-serif;
-  color: #333;
+.conteudo-principal-informacoes p:last-child {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #4C8ECC;
   line-height: 1.4;
+  margin: 0;
 }
 
 /*---------------------- Footer -----------------------------*/
 
 .barra{
   margin: auto;
-  width: 18.063rem;
-  height: 1.125rem;
-  border-radius: 100px;
-  background-color: #2D2D2D;
-  margin-top: 8rem;
-  margin-bottom: 3.25rem;
+  width: 100%;
+  height: 0.188rem;
+  background: linear-gradient(to right, #51B2CD, #304EC5);
+  margin-top: 5.313rem;
+  margin-bottom: 3.438rem;
 }
 
 .footer {
@@ -358,31 +303,81 @@ body {
 }
 
 .footer-contato .duvidas {
-  color: #2D2D2D;
-  font-size: 2rem; /* equivalente a 32px */
-  margin-bottom: 0.5rem;
-  font-family: 'Lexend', sans-serif;
+  color: #4C8ECC;
+  font-size: 1.563rem; /* equivalente a 25px */
+  margin-bottom: 1.313rem;
   font-weight: 600;
 }
 
 .footer-contato .email-contato {
-  color: #2D2D2D;
-  font-size: 1.5rem; /* equivalente a 24px */
+  color: #4C8ECC;
+  font-size: 1.25rem; /* equivalente a 20px */
   font-family: 'Lexend', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .footer-inferior {
-  font-size: 1.5rem;
-  font-weight: 600;
-  background-color: #2D2D2D;
-  height: 11.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(to right, #51B2CD, #304EC5);
   color: #F1F1F1;
+  padding: 3.063rem 20px;
   text-align: center;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column; /* organiza em coluna */
+  gap: 2rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px; /* limite para não ficar muito espalhado */
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem; /* diminui o espaço entre título e valor */
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+.footer-col p{
+  margin: 0;
+}
+
+.footer-col p:first-child {
+  font-weight: 600;
+}
+
+.footer-endereco {
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+/* ---------------------------- VETORES DA PÁGINA ---------------------------- */
+
+.decorativo {
+  position: absolute;
+  width: 95.813rem;
+  height: 44.182rem;
+  pointer-events: none;
+  opacity: 1;
+  z-index: -1;
+}
+
+.decorativo-bottom {
+  top: 91.875rem;
+  right: -30rem;
+  transform: scaleX(-1);  /* espelha horizontalmente */
+  
+}
+
+.decorativo-center {
+  top: 60%;
+  right: -23.75rem;
+  transform: scaleX(-1); 
 }
 
 /* ---------------------------- MEDIA QUERIES - RESPONSIVIDADE ---------------------------- */

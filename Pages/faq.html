@@ -7,50 +7,42 @@
   <link rel="stylesheet" href="../Style/faq.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Viga&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Viga&family=Lexend:wght@100..900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!---------------------- NavBar --------------------------------->
 
   <header>
-    <nav class="navbar">
+    <nav class="header">
       <div class="logo">
-        <a href="../index.html">
-        <img src="../Assets/Filled.svg" alt="">
-        </a>
+        <img src="../Assets/logo_etepd.svg" alt="">
       </div>
-      <ul class="nav-links">
-        <li><a href="#">CURSO</a></li>
-        <li><a href="#">INGRESSO</a></li>
-        <li><a href="#">CAMPUS</a></li>
-      </ul>
+      <h3 class="header-title">Desenvolvimento de Sistemas</h3>
       <!-- Menu hambúrguer para mobile -->
       <div class="hamburger-menu">
         <img src="../Assets/botao_mobile.svg" alt="Menu" class="hamburger-icon">
       </div>
     </nav>
   </header>
+
   <!---------------------- SubBar --------------------------------->
     
-  <nav class="sub-navbar">
-    <div class="sub-navbar-content">
-      <h3 class="sub-navbar-title">Desenvolvimento de Sistemas — Subsequente</h3>
-      <ul class="sub-nav-links">
-        <li><a href="../index.html" class="sub-link">SOBRE</a></li>
-        <li><a href="../Pages/equipe.html" class="sub-link">EQUIPE</a></li>
-        <li><a href="../Pages/avisos.html" class="sub-link">AVISOS</a></li>
-        <li><a href="../Pages/documentos.html" class="sub-link">DOCUMENTOS</a></li>
-        <li><a href="#" class="sub-link">EDITAIS</a></li>
-        <li><a href="#" class="sub-link active">FAQ</a></li>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <ul class="nav-links">
+        <li><a href="../index.html" class="navbar-link">Sobre</a></li>
+        <li><a href="../Pages/equipe.html" class="navbar-link">Equipe</a></li>
+        <li><a href="../Pages/avisos.html" class="navbar-link">Avisos</a></li>
+        <li><a href="../Pages/projetos.html" class="navbar-link">Projetos</a></li>
+        <li><a href="../Pages/documentos.html" class="navbar-link">Editais</a></li>
+        <li><a href="../Pages/faq.html" class="navbar-link active">FAQ</a></li>
       </ul>
     </div>
 
     <div class="siepe">
-      <a href="https://www.siepe.educacao.pe.gov.br" class="sub-link">
-        SIEPE
-        <img src="../Assets/icone_SIEPE.svg" class="siepe-icon" />
-      </a>
+      <a href="https://www.siepe.educacao.pe.gov.br" class="navbar-link">Siepe</a>
     </div>
   </nav>
 
@@ -69,7 +61,7 @@
         <a href="../index.html" class="mobile-nav-link">SOBRE</a>
         <a href="../Pages/equipe.html" class="mobile-nav-link">EQUIPE</a>
         <a href="../Pages/avisos.html" class="mobile-nav-link">AVISOS</a>
-        <a href="../Pages/documentos.html" class="mobile-nav-link">DOCUMENTOS</a>
+        <a href="../Pages/documentos.html" class="mobile-nav-link">PROJETOS</a>
         <a href="#" class="mobile-nav-link">EDITAIS</a>
         <a href="../Pages/faq.html" class="mobile-nav-link">FAQ</a>
         <a href="https://www.siepe.educacao.pe.gov.br" class="mobile-nav-link">SIEPE</a>
@@ -87,236 +79,298 @@
     </div>
   </div>
 
-  <!---------------------- Conteúdo Princpal ----------------------------->
+  <!---------------------- Conteúdo Principal ----------------------------->
 
-    <div class="fundo-roxo">
-        <h3>Perguntas Frequentes</h3>
+  <main class="conteudo-principal">
+    <h1 class="titulo-pagina">FAQ</h1>
+
+    <div class="lista-faq">
+      
+      <!-- PERGUNTA 1: Conteúdo da imagem de referência -->
+      <div class="faq-item">
+        <h2 class="faq-pergunta">1. Como faço para me inscrever na escola?</h2>
+        <p class="faq-resposta">As inscrições são realizadas pelo site oficial da Secretaria de Educação de Pernambuco (SEDUC), durante o período de seleção anual. Basta escolher a ETE Porto Digital como sua opção de escola e preencher o formulário com seus dados.</p>
+      </div>
+
+      <!-- PERGUNTA 2: Conteúdo da imagem de referência -->
+      <div class="faq-item">
+        <h2 class="faq-pergunta">2. Quais cursos a ETE Porto Digital oferece?</h2>
+        <p class="faq-resposta">Técnico em Desenvolvimento de Sistemas e Técnico Multimídia</p>
+      </div>
+
+      <!-- PERGUNTA 3: Conteúdo da imagem de referência -->
+      <div class="faq-item">
+        <h2 class="faq-pergunta">3. Preciso pagar alguma taxa para estudar na ETE Porto Digital?</h2>
+        <p class="faq-resposta">Não. A ETE Porto Digital é uma escola pública estadual, e todos os cursos são gratuitos.</p>
+      </div>
+
+      <!-- PERGUNTA 4: Conteúdo da imagem de referência (que está como 6 na imagem) -->
+      <div class="faq-item">
+        <h2 class="faq-pergunta">6. A escola oferece estágio ou parcerias com empresas?</h2>
+        <p class="faq-resposta">Sim! A ETE Porto Digital mantém parcerias com empresas do Porto Digital, oferecendo oportunidades de estágio e experiências reais no mercado de tecnologia e inovação.</p>
+      </div>
+
+      <!-- PERGUNTAS ADICIONAIS do arquivo antigo, mantendo a numeração original para preservar o contexto -->
+      
+      <h2 class="secao-titulo">Perguntas Detalhadas do Curso</h2>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">1. O que é o curso de Desenvolvimento de Sistemas? O que vou aprender?</h2>
+        <div class="faq-resposta">
+          <p>O Técnico em Desenvolvimento de Sistemas será habilitado para:</p>
+          <ul>
+            <li>Desenvolver sistemas computacionais utilizando ambiente de desenvolvimento.</li>
+            <li>Dimensionar requisitos e funcionalidades do sistema.</li>
+            <li>Realizar testes funcionais de programas de computador e aplicativos.</li>
+            <li>Manter registros para análise e refinamento de resultados.</li>
+            <li>Executar manutenção de programas de computador e suporte técnico.</li>
+            <li>Realizar modelagem de aplicações computacionais.</li>
+            <li>Codificar aplicações e rotinas utilizando linguagens de programação específicas.</li>
+            <li>Executar alterações e manutenções em aplicações e rotinas de acordo com as definições estabelecidas.</li>
+            <li>Prestar apoio técnico na elaboração da documentação de sistemas.</li>
+            <li>Realizar prospecções, testes e avaliações de ferramentas e produtos de desenvolvimento de sistemas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">2. Para atuação como Técnico em Desenvolvimento de Sistemas, são fundamentais?</h2>
+        <div class="faq-resposta">
+          <ul>
+            <li>Conhecimentos e saberes relacionados aos processos de planejamento e execução de projetos computacionais de forma a garantir a entrega de produtos digitais, análise de softwares, testagem de protótipos, de acordo com suas finalidades.</li>
+            <li>Conhecimentos e saberes relacionados às normas técnicas, à liderança de equipes, à solução de problemas técnicos e à assertividade na comunicação de laudos e análises.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">3. Meu nome ou outro dado pessoal (como e-mail) consta errado no sistema SIEPE. Sei que se não fizer, terei muitos problemas. Não poderei nem ter o diploma emitido. Como alterar?</h2>
+        <div class="faq-resposta">
+          <ul>
+            <li>Compareça à secretaria da escola solicitando a regularização de dados pessoais. Deverá levar documentos que comprovem a alteração (RG e/ou Certidão de Nascimento).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">4. Preciso trancar o semestre. O que faço?</h2>
+        <div class="faq-resposta">
+          <ul>
+            <li>Compareça à secretaria da escola portando documento oficial para preencher o requerimento escolar. Ressaltamos que o trancamento só pode ser feito a partir do 2º Módulo do curso. No 1º módulo você só pode realizar a desistência da vaga.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">5. Preciso destrancar o semestre. O que faço?</h2>
+        <div class="faq-resposta">
+          <ul>
+            <li>Compareça à secretaria da escola portando documento oficial para preencher o requerimento escolar.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">6. Para atuação como Técnico em Desenvolvimento de Sistemas, são fundamentais:</h2>
+        <div class="faq-resposta">
+          <ul>
+            <li>Conhecimentos e saberes relacionados aos processos de planejamento e execução de projetos computacionais de forma a garantir a entrega de produtos digitais, análise de softwares, testagem de protótipos, de acordo com suas finalidades.</li>
+            <li>Conhecimentos e saberes relacionados às normas técnicas, à liderança de equipes, à solução de problemas técnicos e à assertividade na comunicação de laudos e análises.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">7. Acabo de entrar no curso da ETEPD. O que devo fazer?</h2>
+        <p class="faq-resposta">Aguardar a orientação da coordenação dos cursos e dos professores quanto aos assuntos: e-mail institucional, horário de aulas, disciplinas do semestre, disciplinas EAD e Atividades complementares.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">8. Qual o turno do curso? Vou estudar pela manhã, à tarde ou à noite?</h2>
+        <p class="faq-resposta">O curso funciona no turno da noite, geralmente com três turmas. As aulas começam presencialmente no horário das 18h40 às 21h20. No horário das 18h às 18h40 teremos disciplinas EAD e/ou Eletiva (para o módulo 1, 2 e/ou e 3) e atividades complementares.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">9. Preciso de um comprovante de matrícula para o VEM. Como fazer?</h2>
+        <p class="faq-resposta">Compareça à secretaria da escola portando documento oficial para preencher o requerimento escolar.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">10. Preciso de um documento da escola. Como fazer?</h2>
+        <p class="faq-resposta">Compareça à secretaria da escola portando documento oficial para preencher o requerimento escolar.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">11. Faltei. Preciso ter faltas abonadas. Como fazer?</h2>
+        <p class="faq-resposta">Entregue a documentação original comprobatória, para tirarmos uma cópia, na secretaria da escola e informe seu e-mail institucional que a Coordenação do curso dará os procedimentos e o copiará para acompanhamento.
+          Favor não enviar atestados via whatsapp.
+          <span class="span-vermelho">OBS: em caso de imprevistos e da impossibilidade de comparecimento o aluno, caso queira, pode avisar aos professores através do e-mail institucional.</span>
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">12. Como criar o meu e-mail institucional?</h2>
+        <p class="faq-resposta">A coordenação do curso cria todos os e-mails em sala de aula. Basta aguardar o momento para criação do seu e-mail. Lembre-se que a conta institucional é responsabilidade do aluno, assim como, armazenamento de senhas e documentos. A sua conta será excluída após a finalização do curso no total de 1 ano e meio (3 módulos).</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">13. Esqueci minha senha do e-mail institucional. Como fazer para criar uma nova senha?</h2>
+        <p class="faq-resposta">Solicite o reset de senha para a coordenação de curso pelo e-mail: acrm@etepd.com e você será atendido em até 24h úteis.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">14. Não recebi o e-mail com meus dados de acesso. E agora?</h2>
+        <p class="faq-resposta">Solicite novos dados após o prazo ter expirado para acrm@etepd.com. Informe sempre seu nome completo, Curso e Módulo. A coordenação do curso entrará em contato com você. É importante enviar mensagem de um e-mail que você tem acesso.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">15. Quero acessar o SIEPE. Como faço?</h2>
+        <p class="faq-resposta">É importante que o aluno realize o auto cadastro. Um vídeo explicativo está disponível em: <a href="https://www.loom.com/share/6fac3df479e54f2292b874e3dbb450d8" target="_blank">https://www.loom.com/share/6fac3df479e54f2292b874e3dbb450d8</a>. Se você é do 1º Módulo a importação dos dados demora um pouco, aguarde pelo menos um mês após o início do semestre.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">16. Como ter nome social na escola?</h2>
+        <p class="faq-resposta">Solicitar à secretaria da ETEPD o preenchimento do Requerimento de Nome Social devidamente assinado pelo próprio interessado maior de 18 (dezoito anos), ou o responsável, que deve ser deferido pelo Diretor da Escola, para que o nome social seja inserido nos documentos escolares internos.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">17. Quem pode solicitar o nome social?</h2>
+        <p class="faq-resposta">Estudantes travestis, transexuais e transgêneros podem solicitar a inclusão do nome social nos registros escolares no ato da matrícula ou a qualquer momento na unidade de ensino. Já estudantes menores de 18 anos podem solicitar a inclusão acompanhados de seus representantes legais.</p>
+      </div>
+
+      <h2 class="secao-titulo">Critérios de avaliação</h2>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">18. Qual a média para passar? E como é realizado o cálculo?</h2>
+        <p class="faq-resposta">A média é 6,0 e durante este semestre você tem 03 atividades para realizar: AT1 (vale 5.0 pontos), AT2 (vale 5.0 pontos) e AV (vale 10.0 pontos). O cálculo é realizado pelo sistema da seguinte forma:
+          Parcial = AT1+AT2  Média = (Parcial + AV) /2
+          Você só consegue ver no SIEPE a média do semestre. As notas da AT1 e AT2 serão disponibilizadas pelos professores da disciplina em sala de aula e no grupo do whatsapp.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">19. As notas são registradas onde?</h2>
+        <p class="faq-resposta">Todas as notas são registradas pelos professores e enviada em formato de planilhas e compartilhadas via grupo do WhatsApp e/ou em sala de aula. Só aparece no SIEPE a média, ou seja, depois que você realiza as 03 atividades e assim, lançadas pelo professor no SIEPE. No boletim aparecem vários campos, mas somente a Média é válida para o subsequente e preenchida via sistema.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">20. Não obtive a média para passar. E agora?</h2>
+        <p class="faq-resposta">Todas as disciplinas têm uma programação de datas, inclusive a recuperação. Tais datas serão informadas para os alunos até o final do mês do início do semestre. <b>Ressaltamos que as disciplinas EAD, Eletivas e Atividades complementares não têm recuperação, pois elas ficam abertas durante quase todo o semestre.</b></p>
+      </div>
+
+      <h2 class="secao-titulo">Estágio</h2>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">21. Quero estagiar e já conseguir uma oportunidade. Como faço?</h2>
+        <p class="faq-resposta">Os estágios não são obrigatórios e você pode conseguir uma oportunidade seja pela divulgação de vagas no grupo do WhatsApp ou pelos nossos estágios voluntários em disciplinas, além dos projetos aprovados na escola. As divulgações das oportunidades são sempre realizadas pelo grupo do WhatsApp.</p>
+      </div>
+
+      <h2 class="secao-titulo">Atividades complementares</h2>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">22. Eu gostaria de entender como funcionam as atividades complementares. Como faço?</h2>
+        <p class="faq-resposta">As atividades complementares são disciplinas semestrais, <b>que não possuem notas, somente frequência</b>, conforme matriz do curso disponibilizada com carga horária no total de 80h. No SIEPE a sua frequência será registrada. Esta disciplina não tem recuperação. Caso você seja reprovado, precisará pagar no semestre seguinte junto com as outras disciplinas.</p>
+      </div>
+
+      <h2 class="secao-titulo">Disciplinas Eletivas e EAD</h2>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">23. O que é uma disciplina Eletiva?</h2>
+        <p class="faq-resposta">A disciplina Eletiva está disponível para os alunos do 2º e 3º Módulo com um professor responsável. Ela é eletiva para que o professor possa eleger algum conteúdo de acordo com o curso, mas é obrigatória para o aluno, pois faz parte da matriz curricular. O professor informará o código da disciplina do Classroom e você entrará com o seu e-mail institucional. Outros tipos de conta serão excluídos automaticamente. Você tem um período para pagar esta disciplina, favor ver com o professor responsável.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">24. O que é uma disciplina EAD?</h2>
+        <p class="faq-resposta">A disciplina EAD está disponível somente para o 1º módulo do curso e é obrigatória pois faz parte da matriz curricular. O professor informará o código da disciplina do Classroom e você entra com o seu e-mail institucional. Outros tipos de conta serão excluídos automaticamente. Você tem um período para pagar esta disciplina, favor ver com o professor responsável.</p>
+      </div>
+
+      <h2 class="secao-titulo">Comunicação eficiente</h2>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">25. Preciso resolver uma questão com a coordenação. O que faço?</h2>
+        <p class="faq-resposta">- Muitas demandas podem ser atendidas pelos próprios alunos, ou não são naturalmente resolvidas pela coordenação, como carteira estudantil, passe livre, entre outros. <br><br>
+          - Há diversos documentos que estão prontos e disponíveis como esta FAQ e demais na descrição do grupo do whatsapp. <br><br>
+          - Leia este documento e verifique se pode resolver sozinho ou com outro setor, como o Apoio Escolar. <br><br>
+          - Faça uma busca neste documento (CTRL F se você estiver lendo digitalmente) pelo assunto do seu interesse. Se notar que falta alguma resposta, por favor informe ao e-mail da coordenação e sua demanda será avaliada. <br><br>
+          - Todos os alunos precisam ser atendidos de forma igualitária. O e-mail é o canal principal, pois oferece naturalmente o registro e uma ordem a ser seguida. <br><br>
+          - Tentar contato por outros canais não oficiais atrapalha a comunicação interna da escola e a ordem natural de atendimento. <br><br>
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">26. Quais são os canais oficiais de comunicação com a coordenação do curso?</h2>
+        <p class="faq-resposta">E-mail: acrm@etepd.com e WhatsApp: (81)98269-0735. Sempre informe seu nome completo, curso e Módulo.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">27. Qual horário da coordenação do curso?</h2>
+        <p class="faq-resposta">O horário é das 14h às 21h, de segunda a sexta. Favor respeitar os horários informados, lembre-se que mensagens do WhatsApp contam como horas trabalhadas para a coordenação do curso.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">28. Estou tentando ligar para um setor da escola, mas não consigo. Ninguém atende.</h2>
+        <p class="faq-resposta">Favor comparecer presencialmente à secretaria da escola. Lembre-se dos horários já informados neste documento.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">29. Quero saber se haverá aula ou não naquele dia?</h2>
+        <p class="faq-resposta">A coordenação sempre envia um comunicado oficial sobre qualquer imprevisto até às 16h. Esse é um horário em que se pode analisar várias situações. Enviar mensagem antes não ajuda muito, pois a coordenação depende de outros setores para deliberar sobre as aulas.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">30. Estou com um problema na disciplina do professor , o que faço?</h2>
+        <p class="faq-resposta">Primeiramente, tente o diálogo com o professor e tentem um acordo. Caso você não seja atendido pode procurar a coordenação do curso para que o problema seja analisado e assim, teremos uma conclusão do ocorrido.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">31. Preciso resolver uma questão com a coordenação. O que faço?</h2>
+        <p class="faq-resposta">Favor comparecer presencialmente à secretaria da escola. Lembre-se dos horários já informados neste documento.</p>
+      </div>
+
+      <h2 class="secao-titulo">Avaliações</h2>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">32. Gostaria de entrar com algum recurso sobre a minha nota da recuperação. Como proceder?</h2>
+        <p class="faq-resposta">Você pode entrar com o recurso via e-mail para acrm@etepd.com no prazo de 48h após o fim da recuperação. Posto isto, os recursos não serão mais aceitos.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">33. Fiz a AT1 ou AT2 e não gostei da minha nota, posso aumentar a nota na recuperação?</h2>
+        <p class="faq-resposta">Oportunizamos a recuperação, exclusivamente, para os casos válidos e respaldados por atestado para nossos alunos. Caso queira participar da recuperação, será realizada ao final da AV, para alunos com média insuficiente.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">34. Até que horas é permitida a entrada de alunos para realizar as avaliações (AT1, AT2 e/ou AV)?</h2>
+        <p class="faq-resposta">O horário de entrada começa às 18h40 e vai até às 19h30. Após este horário, os alunos não poderão mais entrar para realizar a prova, pois a partir deste horário os alunos que estavam realizando a prova podem sair da sala de aula.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">35. Realizei a prova e como tenho acesso à minha prova</h2>
+        <p class="faq-resposta">Após a semana de provas, o professor, em sala de aula, disponibiliza temporariamente para que você, aluno, possa visualizar sua prova e verificar os seus acertos. Após a aula, a prova é recolhida e fica mantida na escola até o fim do semestre, para eventuais consultas.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">36. Reprovação por frequência, como funciona?</h2>
+        <p class="faq-resposta">Os alunos são reprovados por frequência quando atingem um percentual ao final do semestre menor que 75%. Ao longo do semestre, estaremos atualizando as frequências escolares aqui no site da escola, pela ferramenta PowerBI.</p>
+      </div>
+
+      <h2 class="secao-titulo">Erros comuns e como evitá-los na ETEPD</h2>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">37. Meu nome não aparece na lista de chamada do professor. E agora?</h2>
+        <p class="faq-resposta">Procure imediatamente a coordenação do curso pelo e-mail, presencialmente no horário escolar ou via WhatsApp.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">38. Envio mensagens para o coordenador/professor/setor e ele não responde.</h2>
+        <p class="faq-resposta">Verifique se está respeitando as <b>normas de comunicação eficiente</b>. Todos têm um horário dentro da escola e para atendimento dos alunos no WhatsApp. A Coordenação e Secretaria já foi informado neste documento. Professores estão na escola de segunda a sexta de forma presencial e para atendimento via WhatsApp favor procurar o professor a partir das 18h às 21h20, de segunda a sexta, em dias letivos, sem ligações.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2 class="faq-pergunta">39. Estou com problemas que me impedem de continuar o curso no momento. O que faço? Só espero?</h2>
+        <p class="faq-resposta">Compareça à secretaria de forma presencial. Lembre-se que o trancamento só pode ser realizado a partir do 2º módulo. E no 1º módulo só existe a desistência da vaga.</p>
+      </div>
     </div>
-
-    <main class="conteudo-principal">   
-        <div class="grid-cards">
-            <!-- CARD 1 -->
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-infos">
-                      <h3 class="titulo-documento">1. O que é o curso de Desenvolvimento de Sistemas? O que vou aprender?</h3>
-                      <p>O Técnico em Desenvolvimento de Sistemas será habilitado para:</p>
-                      <ul>
-                        <li>Desenvolver sistemas computacionais utilizando ambiente de desenvolvimento.</li>
-                        <li>Dimensionar requisitos e funcionalidades do sistema.</li>
-                        <li>Realizar testes funcionais de programas de computador e aplicativos.</li>
-                        <li>Manter registros para análise e refinamento de resultados.</li>
-                        <li>Executar manutenção de programas de computador e suporte técnico.</li>
-                        <li>Realizar modelagem de aplicações computacionais.</li>
-                        <li>Codificar aplicações e rotinas utilizando linguagens de programação específicas.</li>
-                        <li>Executar alterações e manutenções em aplicações e rotinas de acordo com as definições estabelecidas.</li>
-                        <li>Prestar apoio técnico na elaboração da documentação de sistemas.</li>
-                        <li>Realizar prospecções, testes e avaliações de ferramentas e produtos de desenvolvimento de sistemas.</li>
-                      </ul>
-
-                      <br><br>
-                      <h3 class="titulo-documento">2. Para atuação como Técnico em Desenvolvimento de Sistemas, são fundamentais?</h3>
-                      <ul>
-                        <li>Conhecimentos e saberes relacionados aos processos de planejamento e execução de projetos computacionais de forma a garantir a entrega de produtos digitais, análise de softwares, testagem de protótipos, de acordo com suas finalidades.</li>
-                        <li>Conhecimentos e saberes relacionados às normas técnicas, à liderança de equipes, à solução de problemas técnicos e à assertividade na comunicação de laudos e análises.</li>
-                      </ul>
-
-                      <br><br>
-                      <h3 class="titulo-documento">3. Meu nome ou outro dado pessoal (como e-mail) consta errado no sistema SIEPE. Sei que se não fizer, terei muitos problemas. Não poderei nem ter o diploma emitido. Como alterar?</h3>
-                      <ul>
-                        <li>Compareça à secretaria da escola solicitando a regularização de dados pessoais. Deverá levar documentos que comprovem a alteração (RG e/ou Certidão de Nascimento).</li>
-                      </ul>
-
-                      <br><br>
-                      <h3 class="titulo-documento">4. Preciso trancar o semestre. O que faço?</h3>
-                      <ul>
-                        <li>Compareça à secretaria da escola portando documento oficial para preencher o requerimento escolar. Ressaltamos que o trancamento só pode ser feito a partir do 2º Módulo do curso. No 1º módulo você só pode realizar a desistência da vaga.</li>
-                      </ul>
-
-                      <br><br>
-                      <h3 class="titulo-documento">5. Preciso destrancar o semestre. O que faço?</h3>
-                      <ul>
-                        <li>Compareça à secretaria da escola portando documento oficial para preencher o requerimento escolar.</li>
-                      </ul>
-
-                      <br><br>
-                      <h3 class="titulo-documento">6. Para atuação como Técnico em Desenvolvimento de Sistemas, são fundamentais:</h3>
-                      <ul>
-                        <li>Conhecimentos e saberes relacionados aos processos de planejamento e execução de projetos computacionais de forma a garantir a entrega de produtos digitais, análise de softwares, testagem de protótipos, de acordo com suas finalidades.</li>
-                        <li>Conhecimentos e saberes relacionados às normas técnicas, à liderança de equipes, à solução de problemas técnicos e à assertividade na comunicação de laudos e análises.</li>
-                      </ul>
-
-                      <br><br>
-                      <h3 class="titulo-documento">7. Acabo de entrar no curso da ETEPD. O que devo fazer?</h3>
-                      <ul>
-                        <li>Aguardar a orientação da coordenação dos cursos e dos professores quanto aos assuntos: e-mail institucional, horário de aulas, disciplinas do semestre, disciplinas EAD e Atividades complementares.</li>
-                      </ul>
-
-                      <br><br>
-                      <h3 class="titulo-documento">8. Qual o turno do curso?  Vou estudar pela manhã, à tarde ou à noite?</h3>
-                      <p>O curso funciona no turno da noite, geralmente com três turmas. As aulas começam presencialmente no horário das 18h40 às 21h20. No horário das 18h às 18h40 teremos disciplinas EAD e/ou Eletiva (para o módulo 1,  2 e/ou e 3) e atividades complementares.</p>
-
-                      <br><br>
-                      <h3 class="titulo-documento">9. Preciso de um comprovante de matrícula para o VEM. Como fazer?</h3>
-                      <p>Compareça à secretaria da escola portando documento oficial para preencher o requerimento escolar.</p>
-
-                      <br><br>
-                      <h3 class="titulo-documento">10. Preciso de um documento da escola. Como fazer?</h3>
-                      <p>Compareça à secretaria da escola portando documento oficial para preencher o requerimento escolar.</p>
-
-                      <br><br>
-                      <h3 class="titulo-documento">11. Faltei. Preciso ter faltas abonadas. Como fazer?</h3>
-                      <p>Entregue a documentação original comprobatória, para tirarmos uma cópia, na secretaria da escola e informe seu e-mail institucional que a Coordenação do curso dará os procedimentos e o copiará para acompanhamento.
-                      Favor não enviar atestados via whatsapp.</p>
-                      <span class="span-vermelho">OBS: em caso de imprevistos e da impossibilidade de comparecimento o aluno, caso queira, pode avisar aos professores através do e-mail institucional.</span>
-                        
-                      <br><br>
-                      <h3 class="titulo-documento">12.Como criar o meu e-mail institucional?</h3>
-                      <p>A coordenação do curso cria todos os e-mails em sala de aula. Basta aguardar o momento para criação do seu e-mail. Lembre-se que a conta institucional é responsabilidade do aluno, assim como, armazenamento de senhas e documentos. A sua conta será excluída após a finalização do curso no total de 1 ano e meio (3 módulos).</p>
-                        
-                      <br><br>
-                      <h3 class="titulo-documento">13. Esqueci minha senha do e-mail institucional. Como fazer para criar uma nova senha?</h3>
-                      <p>Solicite o reset de senha para a coordenação de curso pelo e-mail: acrm@etepd.com e você será atendido em até 24h úteis.</p>
-                        
-                      <br><br>
-                      <h3 class="titulo-documento">14. Não recebi o e-mail com meus dados de acesso. E agora?</h3>
-                      <p>Solicite novos dados após o prazo ter expirado para acrm@etepd.com. Informe sempre seu nome completo, Curso e Módulo. A coordenação do curso entrará em contato com você. É importante enviar mensagem de um e-mail que você tem acesso.</p>  
-                        
-                      <br><br>
-                      <h3 class="titulo-documento">15. Quero acessar o SIEPE. Como faço?</h3>
-                      <p>É importante que o aluno realize o auto cadastro. Um vídeo explicativo está disponível em: https://www.loom.com/share/6fac3df479e54f2292b874e3dbb450d8. Se você é do 1º Módulo a importação dos dados demora um pouco, aguarde pelo menos um mês após o início do semestre.</p>  
-                      
-                      <br><br>
-                      <h3 class="titulo-documento">16. Como ter nome social na escola?</h3>
-                      <p>Solicitar à secretaria da ETEPD o preenchimento do Requerimento de Nome Social devidamente assinado pelo próprio interessado maior de 18 (dezoito anos), ou o responsável, que deve ser deferido pelo Diretor da Escola, para que o nome social seja inserido nos documentos escolares internos.</p>
-                      
-                      <br><br>
-                      <h3 class="titulo-documento">17. Quem pode solicitar o nome social?</h3>
-                      <p>Estudantes travestis, transexuais e transgêneros podem solicitar a inclusão do nome social nos registros escolares no ato da matrícula ou a qualquer momento na unidade de ensino. Já estudantes menores de 18 anos podem solicitar a inclusão acompanhados de seus representantes legais.</p>
-                      
-                      <br><br><br>  
-                      <h2>Critérios de avaliação</h2>
-
-                      <br><br>
-                      <h3 class="titulo-documento">18. Qual a média para passar? E como é realizado o cálculo?</h3>
-                      <p>A média é 6,0 e durante este semestre você tem 03 atividades para realizar: AT1 (vale 5.0 pontos), AT2 (vale 5.0 pontos) e AV (vale 10.0 pontos). O cálculo é realizado pelo sistema da seguinte forma:
-                      Parcial = AT1+AT2  Média = (Parcial + AV) /2</p>
-                      <p>Você só consegue ver no SIEPE a média do semestre. As notas da AT1 e AT2 serão disponibilizadas pelos professores da disciplina em sala de aula e no grupo do whatsapp.</p>
-                      
-                      <br><br>
-                      <h3 class="titulo-documento">19. As notas são registradas onde?</h3>
-                      <p>Todas as notas são registradas pelos professores e enviada em formato de planilhas e compartilhadas via grupo do WhatsApp e/ou em sala de aula. Só aparece no SIEPE a média, ou seja, depois que você realiza as 03 atividades e assim, lançadas pelo professor no SIEPE. No boletim aparecem vários campos, mas somente a Média é válida para o subsequente e preenchida via sistema.</p>
-                       
-                      <br><br>
-                      <h3 class="titulo-documento">20. Não obtive a média para passar. E agora?</h3>
-                      <p>Todas as disciplinas têm uma programação de datas, inclusive a recuperação. Tais datas serão informadas para os alunos até o final do mês do início do semestre. <b>Ressaltamos que as disciplinas EAD, Eletivas e Atividades complementares não têm recuperação, pois elas ficam abertas durante quase todo o semestre.</b></p>
-                      
-                      <br><br><br> 
-                      <h2>Estágio</h2>  
-                      
-                      <br><br>
-                      <h3 class="titulo-documento">21. Quero estagiar e já conseguir uma oportunidade. Como faço?</h3>
-                      <p>Os estágios não são obrigatórios e você pode conseguir uma oportunidade seja pela divulgação de vagas no grupo do WhatsApp ou pelos nossos estágios voluntários em disciplinas, além dos projetos aprovados na escola. As divulgações das oportunidades são sempre realizadas pelo grupo do WhatsApp.</p>
-
-                      <br><br><br>  
-                      <h2>Atividades complementares</h2>  
-
-                      <br><br>
-                      <h3 class="titulo-documento">22. Eu gostaria de entender como funcionam as atividades complementares. Como faço?</h3>
-                      <p>As atividades complementares são disciplinas semestrais, <b>que não possuem notas, somente frequência</b>, conforme matriz do curso disponibilizada com carga horária no total de 80h. No SIEPE a sua frequência será registrada. Esta disciplina não tem recuperação. Caso você seja reprovado, precisará pagar no semestre seguinte junto com as outras disciplinas.</p>
-                      
-
-                      <br><br><br>  
-                      <h2>Atividades complementares</h2>
-
-                      <br><br>
-                      <h3 class="titulo-documento">23. O que é uma disciplina Eletiva?</h3>
-                      <p>A disciplina Eletiva está disponível para os alunos do 2º e 3º Módulo com um professor responsável. Ela é eletiva para que o professor possa eleger algum conteúdo de acordo com o curso, mas é obrigatória para o aluno, pois faz parte da matriz curricular. O professor informará o código da disciplina do Classroom e você entrará com o seu e-mail institucional. Outros tipos de conta serão excluídos automaticamente. Você tem um período para pagar esta disciplina, favor ver com o professor responsável.</p>
-
-                      <br><br>
-                      <h3 class="titulo-documento">24. O que é uma disciplina EAD?</h3>
-                      <p>A disciplina EAD está disponível somente para o 1º módulo do curso e é obrigatória pois faz parte da matriz curricular. O professor informará o código da disciplina do Classroom e você entra com o seu e-mail institucional. Outros tipos de conta serão excluídos automaticamente. Você tem um período para pagar esta disciplina, favor ver com o professor responsável.</p>
-                      
-                      <br><br><br>  
-                      <h2>Comunicação eficiente</h2>
-
-                      <br><br>
-                      <h3 class="titulo-documento">25. Preciso resolver uma questão com a coordenação. O que faço?</h3>
-                      <p>- Muitas demandas podem ser atendidas pelos próprios alunos, ou não são naturalmente resolvidas pela coordenação, como carteira estudantil, passe livre, entre outros. <br><br>
-                        - Há diversos documentos que estão prontos e disponíveis como esta FAQ e  demais na descrição do grupo do whatsapp. <br><br>
-                        - Leia este documento e verifique se pode resolver sozinho ou com outro setor, como o Apoio Escolar. <br><br>
-                        - Faça uma busca neste documento (CTRL F se você estiver lendo digitalmente) pelo assunto do seu interesse. Se notar que falta alguma resposta, por favor informe ao e-mail da coordenação e sua demanda será avaliada. <br><br>
-                        - Todos os alunos precisam ser atendidos de forma igualitária. O e-mail é o canal principal, pois oferece naturalmente o registro e uma ordem a ser seguida. <br><br>
-                        - Tentar contato por outros canais não oficiais atrapalha a comunicação interna da escola e a ordem natural de atendimento. <br><br>
-                      </p> 
-                        
-                      <br><br>
-                      <h3 class="titulo-documento">26. Quais são os canais oficiais de comunicação com a coordenação do curso?</h3>
-                      <p>E-mail: acrm@etepd.com e WhatsApp: (81)98269-0735. Sempre informe seu nome completo, curso e Módulo.</p>  
-
-                      <br><br>
-                      <h3 class="titulo-documento">27. Qual horário da coordenação do curso? </h3>
-                      <p>O horário é das 14h às 21h, de segunda a sexta. Favor respeitar os horários informados, lembre-se que mensagens do WhatsApp contam como horas trabalhadas para a coordenação do curso.</p>  
-
-                      <br><br>
-                      <h3 class="titulo-documento">28. Estou tentando ligar para um setor da escola, mas não consigo. Ninguém atende.</h3>
-                      <p>Favor comparecer presencialmente à secretaria da escola. Lembre-se dos horários já informados neste documento.</p>
-
-                      <br><br>
-                      <h3 class="titulo-documento">29. Quero saber se haverá aula ou não naquele dia?</h3>
-                      <p>A coordenação sempre envia um comunicado oficial sobre qualquer imprevisto até às 16h. Esse é um horário em que se pode analisar várias situações. Enviar mensagem antes não ajuda muito, pois a coordenação depende de outros setores para deliberar sobre as aulas.</p>
-                      
-                      <br><br>
-                      <h3 class="titulo-documento">30. Estou com um problema na disciplina do professor , o que faço?</h3>
-                      <p>Primeiramente, tente o diálogo com o professor e tentem um acordo. Caso você não seja atendido pode procurar a coordenação do curso para que o problema seja analisado e assim, teremos uma conclusão do ocorrido.</p>
-
-                      <br><br>
-                      <h3 class="titulo-documento">31. Preciso resolver uma questão com a coordenação. O que faço?</h3>
-                      <p>Favor comparecer presencialmente à secretaria da escola. Lembre-se dos horários já informados neste documento.</p>
-
-                      <br><br><br>  
-                      <h2>Avaliações</h2>
-
-                      <br><br>
-                      <h3 class="titulo-documento">32. Gostaria de entrar com algum recurso sobre a minha nota da recuperação. Como proceder?</h3>
-                      <p>Você pode entrar com o recurso via e-mail para acrm@etepd.com no prazo de 48h após o fim da recuperação. Posto isto, os recursos não serão mais aceitos.</p>  
-
-                      <br><br>
-                      <h3 class="titulo-documento">33. Fiz a AT1 ou AT2 e não gostei da minha nota, posso aumentar a nota na recuperação?</h3>
-                      <p>Oportunizamos a recuperação, exclusivamente, para os casos válidos e respaldados por atestado para nossos alunos. Caso queira participar da recuperação, será realizada ao final da AV, para alunos com média insuficiente.</p>  
-
-                      <br><br>
-                      <h3 class="titulo-documento">34. Até que horas é permitida a entrada de alunos para realizar as avaliações (AT1, AT2 e/ou AV)?</h3>
-                      <p>O horário de entrada começa às 18h40 e vai até às 19h30. Após este horário, os alunos não poderão mais entrar para realizar a prova, pois a partir deste horário os alunos que estavam realizando a prova podem sair da sala de aula.</p>
-                      
-                      <br><br>
-                      <h3 class="titulo-documento">35. Realizei a prova e como tenho acesso à minha prova</h3>
-                      <p>Após a semana de provas, o professor, em sala de aula, disponibiliza temporariamente para que você, aluno, possa visualizar sua prova e verificar os seus acertos. Após a aula, a prova é recolhida e fica mantida na escola até o fim do semestre, para eventuais consultas.</p>
-
-                      <br><br>
-                      <h3 class="titulo-documento">36. Reprovação por frequência, como funciona?</h3>
-                      <p>Os alunos são reprovados por frequência quando atingem um percentual ao final do semestre menor que 75%. Ao longo do semestre, estaremos atualizando as frequências escolares aqui no site da escola, pela ferramenta PowerBI.</p>
-                      
-                      <br><br><br>  
-                      <h2>Erros comuns e como evitá-los na ETEPD</h2>
-
-                      <br><br>
-                      <h3 class="titulo-documento">37. Meu nome não aparece na lista de chamada do professor. E agora?</h3>
-                      <p>Procure imediatamente a coordenação do curso pelo e-mail, presencialmente no horário escolar ou via WhatsApp.</p>
-
-                      <br><br>
-                      <h3 class="titulo-documento">38. Envio mensagens para o coordenador/professor/setor e ele não responde.</h3>
-                      <p>Verifique se está respeitando as <b>normas de comunicação eficiente</b>. Todos têm um horário dentro da escola e para atendimento dos alunos no WhatsApp. A Coordenação e Secretaria já foi informado neste documento. Professores estão na escola de segunda a sexta de forma presencial e para atendimento via WhatsApp favor procurar o professor a partir das 18h às 21h20, de segunda a sexta, em dias letivos, sem ligações.</p>
-
-                      <br><br>
-                      <h3 class="titulo-documento">39. Estou com problemas que me impedem de continuar o curso no momento. O que faço? Só espero?</h3>
-                      <p>Compareça à secretaria de forma presencial. Lembre-se que o trancamento só pode ser realizado a partir do 2º módulo. E no 1º módulo só existe a desistência da vaga.</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>    
-    </main>
+  </main>
 
   <!---------------------- Footer ----------------------------->
 
@@ -325,13 +379,28 @@
   <footer class="footer">
     <div class="footer-contato">
       <h2 class="duvidas">Dúvidas?</h2>
-      <p class="email-contato">Entre em contato pelo e-mail <br> @etepd.com</p>
+      <p class="email-contato">Entre em contato pelo e-mail <br> acrm@etepd.com</p>
     </div>
 
     <div class="footer-inferior">
-      <p>eteportodigital@gmail.com |  Avenida Rio Branco, 193 |   3181 - 4869 / 3161 - 4868</p>
+      <div class="footer-info">
+        <div class="footer-col">
+          <p>Email</p>
+          <p>eteportodigital@gmail.com</p>
+        </div>
+        <div class="footer-col">
+          <p>Contato</p>
+          <p>3181-4869 / 3161-4868</p>
+        </div>
+      </div>
+      <div class="footer-endereco">
+        <p>Avenida Rio Branco, 193 - Bairro do Recife Recife / PE - CEP 50030-310 </p>
+      </div>
     </div>
   </footer>
+
+  <img src="../Assets/Vector.svg" alt="decorativo" class="decorativo decorativo-bottom">
+  <img src="../Assets/Vector.svg" alt="decorativo" class="decorativo decorativo-center">
     
   <script src="../Scripts/faq.js"></script>
 </body>
